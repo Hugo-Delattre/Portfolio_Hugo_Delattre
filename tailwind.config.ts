@@ -1,13 +1,12 @@
 import type { Config } from "tailwindcss";
-
-/** @type {import('tailwindcss').Config} */
 import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
 
-export default {
+const config: Config = {
   content: [
-    "./index.html",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./public/assets/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
@@ -142,3 +141,4 @@ export default {
     }),
   ],
 };
+export default config;
