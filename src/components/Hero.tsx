@@ -1,11 +1,20 @@
 import { Section } from "@/components/Section";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import { curve } from "../../public/assets";
 const heroBackground = "/assets/hero/hero-background-blurred.jpg";
 import Button from "@/components/Button";
+import {
+  BackgroundCircles,
+  BottomLine,
+  Gradient,
+} from "../components/design/Hero";
+import { ScrollParallax } from "react-just-parallax";
+import { heroIcons } from "@/constants";
 
 const Hero = () => {
+  const parallaxRef = useRef(null);
+
   return (
     <Section
       className="pt-[12rem] -mt-[5.25rem]"
@@ -14,7 +23,14 @@ const Hero = () => {
       customPaddings
       id="hero"
     >
-      <div className="container relative">
+      <Image
+        src={heroBackground}
+        alt="background-image"
+        className="w-full -mt-20 rounded-2xl z-0 absolute"
+        width={1440}
+        height={1800}
+      />
+      <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb-[6rem]">
           <h1 className="h1 mb-2">
             <br />
@@ -48,27 +64,31 @@ const Hero = () => {
           <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
             <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
               <div className="relative bg-n-8 rounded-[1rem]">
-                <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]">
+                <div className="rounded-t-[0.9rem]">
                   <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                     <img
                       src="https://halo.wiki.gallery/images/0/00/HInf_Coverart_Large_No_Logo.jpg"
-                      className="w-full"
+                      className="w-full rounded-2xl 
+                      scale-[1.3] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[0%]
+                      "
                       width={1440}
                       height={1800}
                       alt="hero-section-image"
                     />
+
+                    <ScrollParallax isAbsolutelyPositioned>
+                      <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border-n-1/10 rounded-2xl xl:flex">
+                        {heroIcons.map((icon, index) => (
+                          <li className="p-5" key={index}>
+                            <img src={icon} alt={icon} width={24} height={25} />
+                          </li>
+                        ))}
+                      </ul>
+                    </ScrollParallax>
                   </div>
                 </div>
               </div>
-              <div>
-                <Image
-                  src={heroBackground}
-                  alt="background-image"
-                  className="w-full"
-                  width={1440}
-                  height={1800}
-                />
-              </div>
+              <BackgroundCircles />
             </div>
           </div>
         </div>
