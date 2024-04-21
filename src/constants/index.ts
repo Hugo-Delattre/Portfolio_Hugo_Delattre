@@ -58,6 +58,11 @@ export const navigation = [
     title: "References",
     url: "#references",
   },
+  {
+    id: "4",
+    title: "Contact",
+    url: "#hiring",
+  },
 ];
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];

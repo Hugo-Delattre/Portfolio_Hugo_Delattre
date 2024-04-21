@@ -11,6 +11,8 @@ import {
 } from "../components/design/Hero";
 import { ScrollParallax } from "react-just-parallax";
 import { heroIcons } from "@/constants";
+import FloatingNotification from "@/components/FloatingNotification";
+import Link from "next/link";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -84,6 +86,17 @@ const Hero = () => {
                           </li>
                         ))}
                       </ul>
+                    </ScrollParallax>
+
+                    <ScrollParallax isAbsolutelyPositioned>
+                      <FloatingNotification
+                        className="hidden absolute -righ-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
+                        title="I'm currently available for freelance work 👌"
+                        subtitle="Seems like you're in luck!"
+                        imgSrc="https://play-lh.googleusercontent.com/pCYfqB1v-c9Phmvjxji_v37Lf1l59fg1pIy17PztwmS2yoRvGtNAgHZlOHQf0AQo_MZv"
+                        imgAlt="malt-logo"
+                        link="https://www.malt.fr/"
+                      />
                     </ScrollParallax>
                   </div>
                 </div>
