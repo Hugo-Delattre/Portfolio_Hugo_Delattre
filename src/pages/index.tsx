@@ -4,6 +4,7 @@ import ButtonGradient from "../../public/assets//svg/ButtonGradient";
 import Button from "@/components/Button";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Skills from "@/components/Skills";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +16,7 @@ export default function Home() {
         <Hero />
       </div>
       <ButtonGradient />
+      <Skills />
     </>
   );
 }

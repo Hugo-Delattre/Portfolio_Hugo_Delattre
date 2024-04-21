@@ -13,6 +13,7 @@ import { ScrollParallax } from "react-just-parallax";
 import { heroIcons } from "@/constants";
 import FloatingNotification from "@/components/FloatingNotification";
 import Link from "next/link";
+import { CompanyLogos } from "@/components/CompanyLogos";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -28,7 +29,7 @@ const Hero = () => {
       <Image
         src={heroBackground}
         alt="background-image"
-        className="w-full -mt-20 rounded-2xl z-0 absolute"
+        className="w-full -mt-[20rem] rounded-2xl z-0 absolute"
         width={1440}
         height={1800}
       />
@@ -79,7 +80,7 @@ const Hero = () => {
                     />
 
                     <ScrollParallax isAbsolutelyPositioned>
-                      <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border-n-1/10 rounded-2xl xl:flex">
+                      <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
                         {heroIcons.map((icon, index) => (
                           <li className="p-5" key={index}>
                             <img src={icon} alt={icon} width={24} height={25} />
@@ -90,7 +91,7 @@ const Hero = () => {
 
                     <ScrollParallax isAbsolutelyPositioned>
                       <FloatingNotification
-                        className="hidden absolute -righ-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
+                        className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
                         title="I'm currently available for freelance work 👌"
                         subtitle="Seems like you're in luck!"
                         imgSrc="https://play-lh.googleusercontent.com/pCYfqB1v-c9Phmvjxji_v37Lf1l59fg1pIy17PztwmS2yoRvGtNAgHZlOHQf0AQo_MZv"
@@ -103,6 +104,7 @@ const Hero = () => {
               </div>
               <BackgroundCircles />
             </div>
+            <CompanyLogos className="hidden relative z-10 mt-20 md:block" />
           </div>
         </div>
       </div>

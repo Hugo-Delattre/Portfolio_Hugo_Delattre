@@ -34,7 +34,9 @@ import {
   telegram,
   twitter,
   yourlogo,
-} from "../../public/assets";
+} from "../../public/assets/index";
+
+import next from "../../public/assets/logos/programming/next.svg";
 
 export const navigation = [
   {
@@ -60,7 +62,7 @@ export const navigation = [
   },
   {
     id: "4",
-    title: "Contact",
+    title: "Hiring",
     url: "#hiring",
   },
 ];
@@ -69,7 +71,14 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = [
+  "https://cdn.discordapp.com/attachments/1156577116889034857/1231565391457812520/picsprod_logo.png?ex=66376ba6&is=6624f6a6&hm=a8ece1b0cd729a1dbd5d99adb22415369220ff7ba3d95b18f5b5175dac4eae8e&",
+  "https://www.ecoprod.com/images/membres/2371/_thumb1/hipolito-logo.png",
+  // "https://www.arte-studio.fr/wp-content/uploads/2018/04/cropped-ARTE-Studio-logo-noir-2.png",
+  "https://www.arte.tv/sites/corporate/wp-content/themes/arte-entreprise/img/arte_logo.png",
+  "https://www.reworldmedia.com/wp-content/uploads/2020/03/logo_rm_new_fb.png",
+  // yourlogo,
+];
 
 export const brainwaveServices = [
   "Photo generating",
@@ -238,53 +247,71 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Front-end development",
+    text: "Bringing expertise in crafting engaging and user-friendly interfaces, using TypeScript and its modern frameworks and libraries.",
     backgroundUrl: "assets/benefits/card-1.svg",
-    iconUrl: benefitIcon1,
+    iconUrl: [
+      "https://www.svgrepo.com/show/349540/typescript.svg",
+      "https://www.svgrepo.com/show/452092/react.svg",
+      "https://media.discordapp.net/attachments/1156577116889034857/1231647780590846033/next-js-svgrepo-com.png?ex=6637b861&is=66254361&hm=64e62b6c3935f7541b8f9792cb9e6bd5d5c7a3a7afec6d61cc04bb53cff641ee&=&format=webp&quality=lossless&width=784&height=784",
+    ],
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Back-end development",
+    text: "Offering advanced Java skills in developing robust server logic and databases, ensuring seamless performance and security for web applications.",
     backgroundUrl: "assets/benefits/card-2.svg",
-    iconUrl: benefitIcon2,
+    iconUrl: [
+      "https://www.svgrepo.com/show/452234/java.svg",
+      "https://www.svgrepo.com/show/354380/spring-icon.svg",
+      "https://www.svgrepo.com/show/373848/mysql.svg",
+    ],
     imageUrl: benefitImage2,
     light: true,
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "DevOps",
+    text: "Proficiency hosting and deploying projects on the web, as well as integrating CI/CD for efficient software delivery.",
     backgroundUrl: "assets/benefits/card-3.svg",
-    iconUrl: benefitIcon3,
+    iconUrl: [
+      "https://www.svgrepo.com/show/452210/git.svg",
+      "https://www.svgrepo.com/show/448221/docker.svg",
+    ],
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Web3",
+    text: "Passionately integrating blockchain technologies to create secure and transparent decentralized web applications (for related projects).",
     backgroundUrl: "assets/benefits/card-4.svg",
-    iconUrl: benefitIcon4,
+    iconUrl: [
+      "https://www.svgrepo.com/show/373788/light-solidity.svg",
+      "https://seeklogo.com/images/E/ethers-logo-D5B86204D8-seeklogo.com.png",
+    ],
     imageUrl: benefitImage2,
     light: true,
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "UI/UX",
+    text: "My years working in the audiovisual field gave me a sensitive eye to design that helps me implement visually appealing and intuitive interfaces.",
     backgroundUrl: "assets/benefits/card-5.svg",
-    iconUrl: benefitIcon1,
+    iconUrl: [
+      "https://www.svgrepo.com/show/448222/figma.svg",
+      "https://www.svgrepo.com/show/452149/adobe-photoshop.svg",
+    ],
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Soft Skills",
+    text: "Bringing attentive listening and proactive involvement to deeply understand the needs of my clients / manager / lead tech, in order to deliver the best solutions.",
     backgroundUrl: "assets/benefits/card-6.svg",
-    iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
+    iconUrl: [""],
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToxvuNhR2-wx9X9zblwtTmeBdkfwV75HA8bpJ_Vpz_ow&s",
   },
 ];
 
