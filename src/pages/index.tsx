@@ -5,6 +5,8 @@ import Button from "@/components/Button";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Skills from "@/components/Skills";
+import { Projects } from "@/components/Projects";
+import { Collaboration } from "@/components/Collaboration";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +19,8 @@ export default function Home() {
       </div>
       <ButtonGradient />
       <Skills />
+      <Collaboration />
+      <Projects />
     </>
   );
 }

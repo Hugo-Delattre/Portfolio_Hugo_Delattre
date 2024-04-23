@@ -36,6 +36,8 @@ import {
   yourlogo,
 } from "../../public/assets/index";
 
+import Gitlab from "../../public/assets/logos/programming/gitlab.svg";
+
 import next from "../../public/assets/logos/programming/next.svg";
 
 export const navigation = [
@@ -130,22 +132,21 @@ export const roadmap = [
   },
 ];
 
-export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
-
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
-    text: collabText,
+    title: "Technical Expertise",
+    text: "Specialized in web development, I'm efficient in both front-end and back-end technologies, allowing me to add productivity to both sides of your project. I'm constantly keeping me up to date with technologies, clean code principles and architectures.",
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Collaboration and Communication",
+    text: "I value open communication and collaboration, working closely with my clients and team members to ensure project success, committed to deliver results that exceed expectations. Additionally, I'm friendly and easy to work with!",
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "100% of successful past experiences",
+    text: "I have successfully completed multiple projects in the past, either in intership, apprenticeship, full-time and freelance jobs: the feedback of my clients and coworkers have always been great, in both the audiovisual and IT sectors.",
   },
 ];
 
@@ -255,7 +256,7 @@ export const benefits = [
       "https://www.svgrepo.com/show/452092/react.svg",
       "https://media.discordapp.net/attachments/1156577116889034857/1231647780590846033/next-js-svgrepo-com.png?ex=6637b861&is=66254361&hm=64e62b6c3935f7541b8f9792cb9e6bd5d5c7a3a7afec6d61cc04bb53cff641ee&=&format=webp&quality=lossless&width=784&height=784",
     ],
-    imageUrl: benefitImage2,
+    imageUrl: "https://www.svgrepo.com/show/452092/react.svg",
   },
   {
     id: "1",
@@ -267,7 +268,7 @@ export const benefits = [
       "https://www.svgrepo.com/show/354380/spring-icon.svg",
       "https://www.svgrepo.com/show/373848/mysql.svg",
     ],
-    imageUrl: benefitImage2,
+    imageUrl: "https://www.svgrepo.com/show/354380/spring-icon.svg",
     light: true,
   },
   {
@@ -276,10 +277,10 @@ export const benefits = [
     text: "Proficiency hosting and deploying projects on the web, as well as integrating CI/CD for efficient software delivery.",
     backgroundUrl: "assets/benefits/card-3.svg",
     iconUrl: [
-      "https://www.svgrepo.com/show/452210/git.svg",
+      "https://www.svgrepo.com/show/448226/gitlab.svg",
       "https://www.svgrepo.com/show/448221/docker.svg",
     ],
-    imageUrl: benefitImage2,
+    imageUrl: "https://www.svgrepo.com/show/448221/docker.svg",
   },
   {
     id: "3",
@@ -290,7 +291,8 @@ export const benefits = [
       "https://www.svgrepo.com/show/373788/light-solidity.svg",
       "https://seeklogo.com/images/E/ethers-logo-D5B86204D8-seeklogo.com.png",
     ],
-    imageUrl: benefitImage2,
+    imageUrl:
+      "https://seeklogo.com/images/E/ethers-logo-D5B86204D8-seeklogo.com.png",
     light: true,
   },
   {
@@ -302,7 +304,7 @@ export const benefits = [
       "https://www.svgrepo.com/show/448222/figma.svg",
       "https://www.svgrepo.com/show/452149/adobe-photoshop.svg",
     ],
-    imageUrl: benefitImage2,
+    imageUrl: "https://www.svgrepo.com/show/448222/figma.svg",
   },
   {
     id: "5",
@@ -310,8 +312,7 @@ export const benefits = [
     text: "Bringing attentive listening and proactive involvement to deeply understand the needs of my clients / manager / lead tech, in order to deliver the best solutions.",
     backgroundUrl: "assets/benefits/card-6.svg",
     iconUrl: [""],
-    imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToxvuNhR2-wx9X9zblwtTmeBdkfwV75HA8bpJ_Vpz_ow&s",
+    imageUrl: "",
   },
 ];
 

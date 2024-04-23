@@ -4,6 +4,7 @@ import { benefits } from "@/constants";
 
 import Arrow from "../../public/assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
+import ClipPath from "../../public/assets/svg/ClipPath";
 
 const Skills = () => {
   //TODO Show that i'm more advanced in front and back, that I am in DevOps, Web3 and UI/UX. Cards could have different sizes.
@@ -48,11 +49,11 @@ const Skills = () => {
               )}
             </div>
             {item.light && <GradientLight />}
-            {/* <div
+            <div
               className="absolute inset-0.5 bg-n-8"
               style={{ clipPath: "url(#benefits)" }}
             >
-              <div>
+              <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
                 {item.imageUrl && (
                   <img
                     src={item.imageUrl}
@@ -63,7 +64,8 @@ const Skills = () => {
                   ></img>
                 )}
               </div>
-            </div> */}
+            </div>
+            <ClipPath />
           </div>
         ))}
       </div>
