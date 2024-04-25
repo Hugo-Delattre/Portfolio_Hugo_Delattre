@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import Skills from "@/components/Skills";
 import { Projects } from "@/components/Projects";
 import { Collaboration } from "@/components/Collaboration";
+import { References } from "@/components/References";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function Home() {
       <Skills />
       <Collaboration />
       <Projects />
+      <References />
     </>
   );
 }

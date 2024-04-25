@@ -141,12 +141,12 @@ export const collabContent = [
   {
     id: "1",
     title: "Collaboration and Communication",
-    text: "I value open communication and collaboration, working closely with my clients and team members to ensure project success, committed to deliver results that exceed expectations. Additionally, I'm friendly and easy to work with!",
+    text: "I value open communication and collaboration, working closely with my clients and team members to ensure project success. Additionally, I'm friendly and easy to work with!",
   },
   {
     id: "2",
     title: "100% of successful past experiences",
-    text: "I have successfully completed multiple projects in the past, either in intership, apprenticeship, full-time and freelance jobs: the feedback of my clients and coworkers have always been great, in both the audiovisual and IT sectors.",
+    text: "I have successfully completed multiple projects in the past, either in intership, apprenticeship, full-time and freelance jobs: the feedback of my clients and coworkers have always been great, check it below!",
   },
 ];
 
@@ -262,7 +262,7 @@ export const benefits = [
     id: "1",
     title: "Back-end development",
     text: "Offering advanced Java skills in developing robust server logic and databases, ensuring seamless performance and security for web applications.",
-    backgroundUrl: "assets/benefits/card-2.svg",
+    backgroundUrl: "assets/benefits/card-4.svg",
     iconUrl: [
       "https://www.svgrepo.com/show/452234/java.svg",
       "https://www.svgrepo.com/show/354380/spring-icon.svg",
@@ -275,7 +275,7 @@ export const benefits = [
     id: "2",
     title: "DevOps",
     text: "Proficiency hosting and deploying projects on the web, as well as integrating CI/CD for efficient software delivery.",
-    backgroundUrl: "assets/benefits/card-3.svg",
+    backgroundUrl: "assets/benefits/card-2.svg",
     iconUrl: [
       "https://www.svgrepo.com/show/448226/gitlab.svg",
       "https://www.svgrepo.com/show/448221/docker.svg",
@@ -286,7 +286,7 @@ export const benefits = [
     id: "3",
     title: "Web3",
     text: "Passionately integrating blockchain technologies to create secure and transparent decentralized web applications (for related projects).",
-    backgroundUrl: "assets/benefits/card-4.svg",
+    backgroundUrl: "assets/benefits/card-3.svg",
     iconUrl: [
       "https://www.svgrepo.com/show/373788/light-solidity.svg",
       "https://seeklogo.com/images/E/ethers-logo-D5B86204D8-seeklogo.com.png",

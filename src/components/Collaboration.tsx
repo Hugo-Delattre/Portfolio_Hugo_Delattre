@@ -2,11 +2,14 @@ import Button from "@/components/Button";
 import { Heading } from "@/components/Heading";
 import { Section } from "@/components/Section";
 import { collabContent } from "@/constants";
+import Image from "next/image";
+import { LeftCurve, RightCurve } from "./design/Collaboration";
 
 export type CollaborationProps = {};
 
 export const Collaboration = (props: CollaborationProps) => {
   //TODO Add a modal when clicking on "discover more about me" that will display an animated (cf lottie)
+  //TODO Choose if I'm gonna keep/remove my profile picture, or change it for a bitmoji or something like that
   return (
     <Section className="crosses">
       <div className="container lg:flex">
@@ -20,7 +23,7 @@ export const Collaboration = (props: CollaborationProps) => {
             {collabContent.map((item) => (
               <li className="mb-3 py-3" key={item.id}>
                 <div className="flex items-center">
-                  <img
+                  <Image
                     src="/assets/check.svg"
                     width={24}
                     height={24}
@@ -37,11 +40,35 @@ export const Collaboration = (props: CollaborationProps) => {
           <Button>Check reviews of my work / Discover more about me</Button>
         </div>
         <div className="lg:ml-auto xl:w-[38rem] mt-4">
-          <p className="body-2 mb-4 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
-            Hello
-          </p>
-          <div className="relative lft-1/2 flex w-[22rem] aspect-square border border-n-6 rounder-full -translate-x-1/2 scale:75 md:scale-100">
-            <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full"></div>
+          <p className="body-2 mb-4 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto"></p>
+          <div className="relative left-1/2 flex w-[20rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
+            <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
+              <div className="w-[14rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
+                <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
+                  <Image
+                    src="/assets/collaboration/hugo-delattre-profile-picture.jpg"
+                    width={800}
+                    height={800}
+                    alt="Hugo Delattre profile picture"
+                    className="rounded-full"
+                  />
+                </div>
+              </div>
+            </div>
+            {/* <ul>
+              <li
+                className={`absolute top-[6rem] left-1/2 h-1/2 -ml-[11rem] origin-bottom text-xxl`}
+                style={{ fontSize: "3rem" }}
+              >
+                <div
+                  className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7  border border-n-1/15 rounded-xl`}
+                >
+                  👋🚀🤝
+                </div>
+              </li>
+            </ul> */}
+            <LeftCurve />
+            <RightCurve />
           </div>
         </div>
       </div>
