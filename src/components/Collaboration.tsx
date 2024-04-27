@@ -11,7 +11,7 @@ export const Collaboration = (props: CollaborationProps) => {
   //TODO Add a modal when clicking on "discover more about me" that will display an animated (cf lottie)
   //TODO Choose if I'm gonna keep/remove my profile picture, or change it for a bitmoji or something like that
   return (
-    <Section className="crosses">
+    <Section id="about" className="crosses">
       <div className="container lg:flex">
         <div className="max-w-[35rem]">
           <Heading

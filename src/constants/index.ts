@@ -1,44 +1,18 @@
 import {
-  benefitIcon1,
-  benefitIcon2,
-  benefitIcon3,
-  benefitIcon4,
-  benefitImage2,
-  chromecast,
-  disc02,
-  discord,
-  discordBlack,
-  facebook,
-  figma,
   file02,
-  framer,
   homeSmile,
   instagram,
   notification2,
   notification3,
   notification4,
-  notion,
-  photoshop,
   plusSquare,
-  protopie,
-  raindrop,
-  recording01,
-  recording03,
   roadmap1,
   roadmap2,
   roadmap3,
   roadmap4,
   searchMd,
-  slack,
-  sliders04,
-  telegram,
   twitter,
-  yourlogo,
 } from "../../public/assets/index";
-
-import Gitlab from "../../public/assets/logos/programming/gitlab.svg";
-
-import next from "../../public/assets/logos/programming/next.svg";
 
 export const navigation = [
   {
@@ -79,21 +53,6 @@ export const companyLogos = [
   // "https://www.arte-studio.fr/wp-content/uploads/2018/04/cropped-ARTE-Studio-logo-noir-2.png",
   "https://www.arte.tv/sites/corporate/wp-content/themes/arte-entreprise/img/arte_logo.png",
   "https://www.reworldmedia.com/wp-content/uploads/2020/03/logo_rm_new_fb.png",
-  // yourlogo,
-];
-
-export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
-];
-
-export const brainwaveServicesIcons = [
-  recording03,
-  recording01,
-  disc02,
-  chromecast,
-  sliders04,
 ];
 
 export const roadmap = [
@@ -136,112 +95,17 @@ export const collabContent = [
   {
     id: "0",
     title: "Technical Expertise",
-    text: "Specialized in web development, I'm efficient in both front-end and back-end technologies, allowing me to add productivity to both sides of your project. I'm constantly keeping me up to date with technologies, clean code principles and architectures.",
+    text: "Specialized in web development, I'm efficient adding productivity in both front-end and back-end sides of your project. I'm constantly keeping me up to date with technologies and best practices.",
   },
   {
     id: "1",
-    title: "Collaboration and Communication",
-    text: "I value open communication and collaboration, working closely with my clients and team members to ensure project success. Additionally, I'm friendly and easy to work with!",
+    title: "Great collaboration and communication",
+    text: "Involved and passionate, I work closely with my clients and team members to ensure project success. I'm also friendly and easy to work with!",
   },
   {
     id: "2",
     title: "100% of successful past experiences",
-    text: "I have successfully completed multiple projects in the past, either in intership, apprenticeship, full-time and freelance jobs: the feedback of my clients and coworkers have always been great, check it below!",
-  },
-];
-
-export const collabApps = [
-  {
-    id: "0",
-    title: "Figma",
-    icon: figma,
-    width: 26,
-    height: 36,
-  },
-  {
-    id: "1",
-    title: "Notion",
-    icon: notion,
-    width: 34,
-    height: 36,
-  },
-  {
-    id: "2",
-    title: "Discord",
-    icon: discord,
-    width: 36,
-    height: 28,
-  },
-  {
-    id: "3",
-    title: "Slack",
-    icon: slack,
-    width: 34,
-    height: 35,
-  },
-  {
-    id: "4",
-    title: "Photoshop",
-    icon: photoshop,
-    width: 34,
-    height: 34,
-  },
-  {
-    id: "5",
-    title: "Protopie",
-    icon: protopie,
-    width: 34,
-    height: 34,
-  },
-  {
-    id: "6",
-    title: "Framer",
-    icon: framer,
-    width: 26,
-    height: 34,
-  },
-  {
-    id: "7",
-    title: "Raindrop",
-    icon: raindrop,
-    width: 38,
-    height: 32,
-  },
-];
-
-export const pricing = [
-  {
-    id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
-    price: "0",
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
-  },
-  {
-    id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
-    features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
-    ],
-  },
-  {
-    id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
+    text: "The feedback of my clients and managers have always been great. Check it out below!",
   },
 ];
 
@@ -261,7 +125,7 @@ export const benefits = [
   {
     id: "1",
     title: "Back-end development",
-    text: "Offering advanced Java skills in developing robust server logic and databases, ensuring seamless performance and security for web applications.",
+    text: "I'm offering advanced Java and Spring skills in developing robust server logic, ensuring seamless performance and security for web applications.",
     backgroundUrl: "assets/benefits/card-4.svg",
     iconUrl: [
       "https://www.svgrepo.com/show/452234/java.svg",
@@ -291,8 +155,7 @@ export const benefits = [
       "https://www.svgrepo.com/show/373788/light-solidity.svg",
       "https://seeklogo.com/images/E/ethers-logo-D5B86204D8-seeklogo.com.png",
     ],
-    imageUrl:
-      "https://seeklogo.com/images/E/ethers-logo-D5B86204D8-seeklogo.com.png",
+    imageUrl: "https://www.svgrepo.com/show/373788/light-solidity.svg",
     light: true,
   },
   {
@@ -316,35 +179,52 @@ export const benefits = [
   },
 ];
 
-export const socials = [
+export const testimonials = [
   {
     id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
+    review:
+      "Hugo s'est très vite intégré avec aisance. Il est très rigoureux dans son travail.",
+    author: "Angèle Le Névé",
+    position: "Directrice de production",
+    company: "ARTE France",
+    relatedJob: "Video editor for 2 years",
+    imgUrl: "https://cdn-icons-png.flaticon.com/512/3541/3541871.png",
   },
   {
     id: "1",
-    title: "Twitter",
+    review:
+      "Hugo est un très bon élément, très agréable. Il a su s'intégrer parfaitement dans l'entreprise et a fait preuve de beaucoup d'autonomie. Merci Hugo pour ton travail !",
+    author: "Rémi Lombard",
+    position: "Manager",
+    company: "Picsprod",
+    relatedJob: "Internship and freelance job as video editor",
+    imgUrl:
+      "https://media.licdn.com/dms/image/C4E03AQFTNRAPUxOpKQ/profile-displayphoto-shrink_100_100/0/1659973025477?e=1719446400&v=beta&t=8xUxpNdqPldLp58YC_8cd4br-FpJdJ7Vgvi4t6qX7RI",
+  },
+  {
+    id: "2",
+    review:
+      "Nous avons été très contents d'Hugo, qui s'est très bien intégré dans notre équipe. Il nous a fourni un travail de qualité.",
+    author: "Grégoire Louge",
+    position: "Directeur",
+    company: "Hipolito",
+    relatedJob: "Intership as a video editor",
+    imgUrl:
+      "https://media.licdn.com/dms/image/C4D03AQFqGMduhK9TRw/profile-displayphoto-shrink_100_100/0/1619712289054?e=1719446400&v=beta&t=cX17pw1y6_PvXnS6egu3V7rlY1ehINgy8mDv9QiQ86I",
+  },
+];
+
+export const socials = [
+  {
+    id: "0",
+    title: "GitHub",
     iconUrl: twitter,
     url: "#",
   },
   {
     id: "2",
-    title: "Instagram",
+    title: "LinkedIn",
     iconUrl: instagram,
-    url: "#",
-  },
-  {
-    id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
-  },
-  {
-    id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
+    url: "https://www.linkedin.com/in/hugodelattre/",
   },
 ];
