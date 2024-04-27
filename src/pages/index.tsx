@@ -21,8 +21,8 @@ export default function Home() {
       <ButtonGradient />
       <Skills />
       <Collaboration />
-      <Projects />
       <References />
+      <Projects />
     </>
   );
 }

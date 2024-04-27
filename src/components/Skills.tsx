@@ -10,7 +10,7 @@ const Skills = () => {
   //TODO Show that i'm more advanced in front and back, that I am in DevOps, Web3 and UI/UX. Cards could have different sizes.
   //TODO Clicking on 'See more' opens a dialog with more details of my competencies. For example, for front-end, I could show that I'm proficient/advanced level in React, Next.js, TailwindCSS, ReactQuery, ReactHookForm, Zod, etc, and that I have solid foundations/fundamental skills in Angular.
   return (
-    <Section id="skills">
+    <Section id="skills" className="overflow-hidden">
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
