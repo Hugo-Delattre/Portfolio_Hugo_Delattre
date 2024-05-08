@@ -20,9 +20,9 @@ export default function Home() {
       </div>
       <ButtonGradient />
       <Skills />
+      <Projects />
       <Collaboration />
       <References />
-      <Projects />
     </>
   );
 }

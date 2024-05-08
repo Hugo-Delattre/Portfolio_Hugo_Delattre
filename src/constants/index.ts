@@ -55,7 +55,7 @@ export const companyLogos = [
   "https://www.reworldmedia.com/wp-content/uploads/2020/03/logo_rm_new_fb.png",
 ];
 
-export const roadmap = [
+export const projects = [
   {
     id: "0",
     title: "Voice recognition",
@@ -71,7 +71,7 @@ export const roadmap = [
     text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
     date: "May 2023",
     status: "progress",
-    imageUrl: roadmap2,
+    imageUrl: "https://images.alphacoders.com/117/1177950.jpg",
   },
   {
     id: "2",

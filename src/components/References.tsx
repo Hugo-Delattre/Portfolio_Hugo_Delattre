@@ -41,7 +41,7 @@ export const References = (props: ReferencesProps) => {
               key={testimonial.id}
               className="flex w-full justify-center self-center"
             >
-              <div className="flex flex-col justify-around w-[30rem] h-[13rem] p-[2rem] pr-6 bg-n-12/40 backdrop-blur border-[1.5px] border-n-1/10 rounded-2xl gap-[0.85rem] z-1">
+              <div className="flex flex-col justify-around w-[30rem] h-[13rem] p-[2rem] pr-6 bg-n-12/40 hover:bg-n-12/50 transition-all backdrop-blur border-[1.5px] border-n-1/10 rounded-2xl gap-[0.85rem] z-1">
                 <p className="italic font-thin text-sm">
                   &quot;{testimonial.review}&quot;
                 </p>
