@@ -17,7 +17,6 @@ const FloatingNotification = ({
 }: FloatingNotificationProps) => {
   const Component = link ? "a" : "div";
   const isLink = link ? true : false;
-  console.log(isLink);
 
   return (
     <Component

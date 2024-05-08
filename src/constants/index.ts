@@ -55,39 +55,47 @@ export const companyLogos = [
   "https://www.reworldmedia.com/wp-content/uploads/2020/03/logo_rm_new_fb.png",
 ];
 
+//TODO Choose if I keep pro and personal projects separated, or if I keep only the bests personal projects to add them to the global projects list.
+//If so it could be "Profesional contributions and side projects" and "Student and personal projects". However the list might grow (Arte Boutique, Arte Radio, Pizza Nova, ...) so it might be better to keep them separated.
+//TODO An other idea could be to reduce the size of the cards and to add a "see more" button to see the full list of projects.
 export const projects = [
   {
     id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
+    title: "Educ'ARTE | ARTE Campus",
+    text: "Plateformes éducatives d'ARTE. J'y ai principalement travaillé sur de l'intégration de composants, développement du front-end, et développement de la console d'administration, et légèrement sur le back-end.",
+    date: "2024",
     status: "done",
-    imageUrl: roadmap1,
+    ticketsSolved: "33",
+    imageUrl:
+      "https://media.discordapp.net/attachments/1017345529354666045/1237861601659457586/Logo_Educ_2023_bleu_1.png?ex=663d2ff4&is=663bde74&hm=0979bc71a399a8c30dc4d5d80ef03a67a9e8ac487c1b8eb2cfe8f238068d5ada&=&format=webp&quality=lossless&width=592&height=297",
     colorful: true,
   },
   {
     id: "1",
-    title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
+    title: "ARTE Kino",
+    text: "Festival de cinéma soutenu par ARTE et Chanel. J'ai travaillé sur le front-end et la console d'administration.",
     date: "May 2023",
-    status: "progress",
-    imageUrl: "https://images.alphacoders.com/117/1177950.jpg",
+    status: "done",
+    ticketsSolved: "8",
+    imageUrl: "https://www.artekino.eu/static/arte-logo.png",
   },
   {
     id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging, and fun to interact with.",
+    title: "Open source contributions",
+    text: "I've done some open source contributions to the repositories of tailwindcss.com and tanstack.com",
     date: "May 2023",
-    status: "done",
+    status: "none",
+    ticketsSolved: "0",
     imageUrl: roadmap3,
   },
   {
     id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
+    title: "Audiovisual work",
+    text: "Before my web development career, I worked in the audiovisual field. During those years, I've worked on various projects, such as documentaries for ARTE, events films for PicProd, music video and ads for Hipolito, and much more as a freelancer.",
     date: "May 2023",
-    status: "progress",
-    imageUrl: roadmap4,
+    status: "none",
+    ticketsSolved: "0",
+    imageUrl: roadmap3,
   },
 ];
 
@@ -104,7 +112,7 @@ export const collabContent = [
   },
   {
     id: "2",
-    title: "100% of successful past experiences",
+    title: "100% of successful past experiences!",
     // text: "The feedback of my clients and managers have always been great. Check it out below!",
   },
 ];

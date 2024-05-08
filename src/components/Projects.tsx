@@ -2,9 +2,8 @@ import { Heading } from "@/components/Heading";
 import { Section } from "@/components/Section";
 import { projects } from "@/constants";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { check2, loading1 } from "../../public/assets";
-import grid from "../../public/assets/grid.png";
 import { Tagline } from "@/components/Tagline";
+import Image from "next/image";
 
 export type ProjectsProps = {};
 
@@ -44,9 +43,8 @@ export const Projects = (props: ProjectsProps) => {
                   >
                     <div className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">
                       <div className="absolute top-0 left-0 max-w-full">
-                        <img
-                          src={grid}
-                          alt=""
+                        <Image
+                          src="/assets/grid.png"
                           className="w-full"
                           width={550}
                           height={550}
@@ -54,32 +52,38 @@ export const Projects = (props: ProjectsProps) => {
                         />
                       </div>
                       <div className="relative z-1">
-                        <div className="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">
-                          <Tagline>{project.date}</Tagline>
+                        <div className="absolute right-2 flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">
+                          {/* <Tagline>{project.date}</Tagline> */}
                           <div className="flex items-center px-4 py-1 bg-n-1 rounded text-n-8">
-                            <img
+                            <Image
                               src={
-                                project.status === "done" ? check2 : loading1
+                                project.status === "done"
+                                  ? "/assets/check-02.svg"
+                                  : "/assets/loading-01.svg"
                               }
                               className="mr-2.5"
                               width={16}
                               height={16}
                               alt={status}
                             />
-                            <div className="tagline">{status}</div>
+                            <div className="tagline">
+                              {project.ticketsSolved} tickets résolus
+                            </div>
                           </div>
-                          <div className="mb-10 -my-10 -mx-15">
-                            <img
-                              src={project.imageUrl}
-                              className="w-full"
-                              width={630}
-                              height={420}
-                              alt={project.title}
-                            />
-                          </div>
-                          <h4 className="h4 mb-4">{project.title}</h4>
-                          <p className="body-2 text-n-4">{project.text}</p>
                         </div>
+                        <div
+                        // className="mb-10 -my-20 -mx-15"
+                        >
+                          <Image
+                            src={project.imageUrl}
+                            className=""
+                            width={200}
+                            height={150}
+                            alt={project.title}
+                          />
+                        </div>
+                        <h4 className="mt-6 h4 mb-4">{project.title}</h4>
+                        <p className="body-2 text-n-4">{project.text}</p>
                       </div>
                     </div>
                   </div>
