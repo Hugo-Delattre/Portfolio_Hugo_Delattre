@@ -48,7 +48,7 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 export const notificationImages = [notification4, notification3, notification2];
 
 export const companyLogos = [
-  "https://cdn.discordapp.com/attachments/1156577116889034857/1231565391457812520/picsprod_logo.png?ex=66376ba6&is=6624f6a6&hm=a8ece1b0cd729a1dbd5d99adb22415369220ff7ba3d95b18f5b5175dac4eae8e&",
+  // "https://cdn.discordapp.com/attachments/1156577116889034857/1231565391457812520/picsprod_logo.png?ex=66376ba6&is=6624f6a6&hm=a8ece1b0cd729a1dbd5d99adb22415369220ff7ba3d95b18f5b5175dac4eae8e&",
   "https://www.ecoprod.com/images/membres/2371/_thumb1/hipolito-logo.png",
   // "https://www.arte-studio.fr/wp-content/uploads/2018/04/cropped-ARTE-Studio-logo-noir-2.png",
   "https://www.arte.tv/sites/corporate/wp-content/themes/arte-entreprise/img/arte_logo.png",
@@ -76,7 +76,7 @@ export const projects = [
   {
     id: "2",
     title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
+    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging, and fun to interact with.",
     date: "May 2023",
     status: "done",
     imageUrl: roadmap3,
@@ -113,7 +113,7 @@ export const benefits = [
   {
     id: "0",
     title: "Front-end development",
-    text: "Bringing expertise in crafting engaging and user-friendly interfaces, using TypeScript and its modern frameworks and libraries.",
+    text: "Bringing expertise in crafting engaging, accessible and user-friendly interfaces, using TypeScript and its modern frameworks and libraries.",
     backgroundUrl: "assets/benefits/card-1.svg",
     iconUrl: [
       "https://www.svgrepo.com/show/349540/typescript.svg",
@@ -136,29 +136,6 @@ export const benefits = [
     light: true,
   },
   {
-    id: "2",
-    title: "DevOps",
-    text: "Proficiency hosting and deploying projects on the web, as well as integrating CI/CD for efficient software delivery.",
-    backgroundUrl: "assets/benefits/card-2.svg",
-    iconUrl: [
-      "https://www.svgrepo.com/show/448226/gitlab.svg",
-      "https://www.svgrepo.com/show/448221/docker.svg",
-    ],
-    imageUrl: "https://www.svgrepo.com/show/448221/docker.svg",
-  },
-  {
-    id: "3",
-    title: "Web3",
-    text: "Passionately integrating blockchain technologies to create secure and transparent decentralized web applications (for related projects).",
-    backgroundUrl: "assets/benefits/card-3.svg",
-    iconUrl: [
-      "https://www.svgrepo.com/show/373788/light-solidity.svg",
-      "https://seeklogo.com/images/E/ethers-logo-D5B86204D8-seeklogo.com.png",
-    ],
-    imageUrl: "https://www.svgrepo.com/show/373788/light-solidity.svg",
-    light: true,
-  },
-  {
     id: "4",
     title: "UI/UX",
     text: "My years working in the audiovisual field gave me a sensitive eye to design that helps me implement visually appealing and intuitive interfaces.",
@@ -170,13 +147,37 @@ export const benefits = [
     imageUrl: "https://www.svgrepo.com/show/448222/figma.svg",
   },
   {
-    id: "5",
-    title: "Soft Skills",
-    text: "Bringing attentive listening and proactive involvement to deeply understand the needs of my clients / manager / lead tech, in order to deliver the best solutions.",
-    backgroundUrl: "assets/benefits/card-6.svg",
-    iconUrl: [""],
-    imageUrl: "",
+    id: "2",
+    title: "Collaboration",
+    text: "I'm confident with the tools and workflows needed to work efficiently in a team, as well as bringing attentive listening to deeply understand the needs of my clients.",
+    backgroundUrl: "assets/benefits/card-2.svg",
+    iconUrl: [
+      "https://www.svgrepo.com/show/448226/gitlab.svg",
+      "https://www.svgrepo.com/show/448221/docker.svg",
+    ],
+    imageUrl: "https://www.svgrepo.com/show/448221/docker.svg",
   },
+  // {
+  //   id: "3",
+  //   title: "Web3",
+  //   text: "Passionately integrating blockchain technologies to create secure and transparent decentralized web applications (for related projects).",
+  //   backgroundUrl: "assets/benefits/card-3.svg",
+  //   iconUrl: [
+  //     "https://www.svgrepo.com/show/373788/light-solidity.svg",
+  //     "https://seeklogo.com/images/E/ethers-logo-D5B86204D8-seeklogo.com.png",
+  //   ],
+  //   imageUrl: "https://www.svgrepo.com/show/373788/light-solidity.svg",
+  //   light: true,
+  // },
+
+  // {
+  //   id: "5",
+  //   title: "Soft Skills",
+  //   text: "Bringing attentive listening and proactive involvement to deeply understand the needs of my clients / manager / lead tech, in order to deliver the best solutions.",
+  //   backgroundUrl: "assets/benefits/card-6.svg",
+  //   iconUrl: [""],
+  //   imageUrl: "",
+  // },
 ];
 
 export const testimonials = [

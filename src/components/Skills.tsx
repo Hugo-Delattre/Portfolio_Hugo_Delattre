@@ -18,7 +18,7 @@ const Skills = () => {
           subtitle="...that will make your web project a success 🚀"
         />
       </div>
-      <div className="flex flex-wrap gap-10 mb-10 justify-center">
+      <div className="flex flex-wrap gap-10 mb-10 justify-center lg:mx-[15rem] xl:mx-[20rem]">
         {benefits.map((item) => (
           <div
             key={item.id}

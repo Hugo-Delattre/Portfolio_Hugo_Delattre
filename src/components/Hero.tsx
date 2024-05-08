@@ -61,13 +61,13 @@ const Hero = () => {
               />
             </span>
           </p>
-          <Button href="/#contact" className="mt-8">
+          {/* <Button href="/#contact" className="mt-8">
             Learn more about me
-          </Button>
+          </Button> */}
           <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
-            {/* <div> */}
-            <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
-              <div className="relative bg-n-8 rounded-[1rem]">
+            <div>
+              {/* <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient"> */}
+              {/* <div className="relative bg-n-8 rounded-[1rem]">
                 <div className="rounded-t-[0.9rem]">
                   <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                     <img
@@ -102,7 +102,7 @@ const Hero = () => {
                     </ScrollParallax>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <BackgroundCircles />
             </div>
             <CompanyLogos className="hidden relative z-10 mt-20 md:block" />
