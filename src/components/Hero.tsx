@@ -103,7 +103,7 @@ const Hero = () => {
                   </div>
                 </div>
               </div> */}
-              <BackgroundCircles />
+              <BackgroundCircles parallaxRef={undefined} />
             </div>
             <CompanyLogos className="hidden relative z-10 mt-20 md:block" />
           </div>

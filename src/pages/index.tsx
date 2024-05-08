@@ -10,6 +10,7 @@ import { Collaboration } from "@/components/Collaboration";
 import { References } from "@/components/References";
 import FloatingNotification from "@/components/FloatingNotification";
 import { ScrollParallax } from "react-just-parallax";
+import { Footer } from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function Home() {
       <Projects />
       <Collaboration />
       {/* <References /> */}
+      <Footer />
       <ScrollParallax isAbsolutelyPositioned>
         <FloatingNotification
           className="overflow-hidden fixed right-[2.5rem] bottom-[2.5rem] w-[18rem] xl:flex z-2 scale-[1]"

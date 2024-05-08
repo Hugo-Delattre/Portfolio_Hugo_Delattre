@@ -6,10 +6,7 @@ import {
   notification3,
   notification4,
   plusSquare,
-  roadmap1,
-  roadmap2,
   roadmap3,
-  roadmap4,
   searchMd,
   twitter,
 } from "../../public/assets/index";
@@ -227,13 +224,20 @@ export const socials = [
   {
     id: "0",
     title: "GitHub",
-    iconUrl: twitter,
+    iconUrl: "https://github.com/Hugo-Delattre",
     url: "#",
   },
   {
-    id: "2",
+    id: "1",
     title: "LinkedIn",
-    iconUrl: instagram,
+    iconUrl: "https://cdn-icons-png.flaticon.com/256/174/174857.png",
+    url: "https://www.linkedin.com/in/hugodelattre/",
+  },
+  {
+    id: "2",
+    title: "Malt",
+    iconUrl:
+      "https://play-lh.googleusercontent.com/pCYfqB1v-c9Phmvjxji_v37Lf1l59fg1pIy17PztwmS2yoRvGtNAgHZlOHQf0AQo_MZv",
     url: "https://www.linkedin.com/in/hugodelattre/",
   },
 ];
