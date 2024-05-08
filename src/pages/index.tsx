@@ -24,7 +24,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Collaboration />
-      <References />
+      {/* <References /> */}
       <ScrollParallax isAbsolutelyPositioned>
         <FloatingNotification
           className="overflow-hidden fixed right-[2.5rem] bottom-[2.5rem] w-[18rem] xl:flex z-2 scale-[1]"

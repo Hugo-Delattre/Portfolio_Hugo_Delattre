@@ -105,7 +105,7 @@ export const collabContent = [
   {
     id: "2",
     title: "100% of successful past experiences",
-    text: "The feedback of my clients and managers have always been great. Check it out below!",
+    // text: "The feedback of my clients and managers have always been great. Check it out below!",
   },
 ];
 
@@ -183,8 +183,8 @@ export const benefits = [
 export const testimonials = [
   {
     id: "0",
-    review:
-      "Hugo s'est très vite intégré avec aisance. Il est très rigoureux dans son travail.",
+    review: "Hugo s'est très vite intégré avec aisance.",
+    reviewSecondPart: "Il est très rigoureux dans son travail.",
     author: "Angèle Le Névé",
     position: "Directrice de production",
     company: "ARTE France",

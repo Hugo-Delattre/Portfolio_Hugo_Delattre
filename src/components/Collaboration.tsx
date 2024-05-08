@@ -4,12 +4,11 @@ import { Section } from "@/components/Section";
 import { collabContent } from "@/constants";
 import Image from "next/image";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
+import { TestominalCarousel } from "@/components/TestominalCarousel";
 
 export type CollaborationProps = {};
 
 export const Collaboration = (props: CollaborationProps) => {
-  //TODO Add a modal when clicking on "discover more about me" that will display an animated (cf lottie)
-  //TODO Choose if I'm gonna keep/remove my profile picture, or change it for a bitmoji or something like that
   return (
     <Section id="about" className="crosses">
       <div className="container lg:flex">
@@ -36,8 +35,12 @@ export const Collaboration = (props: CollaborationProps) => {
                 )}
               </li>
             ))}
+            <div className="relative">
+              <TestominalCarousel isLarge={false} />
+            </div>
           </ul>
-          <Button>Check reviews of my work / Discover more about me</Button>
+          {/* <Button>Check reviews of my work / Discover more about me</Button>
+           */}
         </div>
         <div className="lg:ml-auto xl:w-[38rem] mt-1">
           <p className="body-2 mb-4 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto"></p>
