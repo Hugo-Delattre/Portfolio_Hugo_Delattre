@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['img.freepik.com', 'images.alphacoders.com', 'media.discordapp.net', 'encrypted-tbn0.gstatic.com', 'www.artekino.eu'],
+    domains: ['res.cloudinary.com'],
   },
 };
 

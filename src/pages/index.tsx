@@ -30,11 +30,11 @@ export default function Home() {
       <ScrollParallax isAbsolutelyPositioned>
         <FloatingNotification
           className="overflow-hidden fixed right-[2.5rem] bottom-[2.5rem] w-[18rem] xl:flex z-2 scale-[1]"
-          title="I'm currently available for freelance work 👌"
-          subtitle="Seems like you're in luck!"
-          imgSrc="https://play-lh.googleusercontent.com/pCYfqB1v-c9Phmvjxji_v37Lf1l59fg1pIy17PztwmS2yoRvGtNAgHZlOHQf0AQo_MZv"
+          title="I'm currently available for freelance work."
+          subtitle="Seems like you're in luck 😉"
+          imgSrc="https://res.cloudinary.com/dxaqv2hww/image/upload/v1720969103/malt_logo_vnbq3d.png"
           imgAlt="malt-logo"
-          link="https://www.malt.fr/"
+          link="https://www.malt.fr/profile/hugodelattre"
         />
       </ScrollParallax>
     </>
