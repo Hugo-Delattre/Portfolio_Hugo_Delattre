@@ -1,5 +1,5 @@
 import { Section } from "@/components/Section";
-import { socials } from "@/constants";
+import { socials } from "@/constants/socials";
 
 export type FooterProps = {};
 

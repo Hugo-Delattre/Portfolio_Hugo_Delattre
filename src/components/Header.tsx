@@ -5,7 +5,7 @@ import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 import MenuSvg from "@/../public/assets/svg/MenuSvg";
 import Button from "@/components/Button";
-import { navigation } from "@/constants";
+import { navigation } from "@/constants/navigation";
 import { HamburgerMenu } from "@/components/design/Header";
 
 const Header = () => {
@@ -31,13 +31,13 @@ const Header = () => {
   return (
     <div
       className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
-        openNavigation ? "bg-n-8" : "bg-n-8/90 backgrop-blur-small"
+        openNavigation ? "bg-black" : "bg-n-8/90 backdrop-blur-small"
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="block  w-[12rem] xl:mr-8" href="#hero">
+        {/* <a className="block w-[12rem] xl:mr-8" href="#hero">
           Logo
-        </a>
+        </a> */}
         <nav
           className={` ${
             openNavigation ? "flex" : "hidden"
@@ -52,6 +52,7 @@ const Header = () => {
                 key={item.id}
                 href={item.url}
                 onClick={handleClick}
+                target={item.openInNewTab ? "_blank" : undefined}
               >
                 {item.title}
               </Link>

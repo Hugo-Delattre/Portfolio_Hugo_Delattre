@@ -1,6 +1,6 @@
 import { Heading } from "@/components/Heading";
 import { Section } from "@/components/Section";
-import { benefits } from "@/constants";
+import { skills } from "@/constants/skills";
 
 import Arrow from "../../public/assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
@@ -9,7 +9,7 @@ import ClipPath from "../../public/assets/svg/ClipPath";
 const Skills = () => {
   //TODO Clicking on 'See more' opens a dialog with more details of my competencies. For example, for front-end, I could show that I'm proficient/advanced level in React, Next.js, TailwindCSS, ReactQuery, ReactHookForm, Zod, etc, and that I have solid foundations/fundamental skills in Angular.
   return (
-    <Section id="skills" className="overflow-hidden">
+    <Section id="skills" className="overflow-hidden px-8">
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
@@ -17,8 +17,8 @@ const Skills = () => {
           subtitle="...that will make your web project a success 🚀"
         />
       </div>
-      <div className="flex flex-wrap gap-10 mb-10 justify-center lg:mx-[15rem] xl:mx-[20rem]">
-        {benefits.map((item) => (
+      <div className="flex flex-wrap gap-10 mb-10 justify-center lg:mx-[5rem] xl:mx-[10rem]">
+        {skills.map((item) => (
           <div
             key={item.id}
             className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
