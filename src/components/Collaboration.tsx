@@ -16,7 +16,7 @@ export const Collaboration = (props: CollaborationProps) => {
           <Heading
             className="md:max-w-md lg:max-w-2xl"
             title="About me..."
-            subtitle="...and why you might choose me as your next team member 😉"
+            subtitle="...and why you might choose me as your next team member 🙂"
           />
           <ul className="max-w-[22rem} mb-10 md:mb-14">
             {collabContent.map((item) => (

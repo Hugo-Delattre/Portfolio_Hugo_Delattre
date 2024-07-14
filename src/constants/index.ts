@@ -1,14 +1,12 @@
 import {
   file02,
   homeSmile,
-  instagram,
   notification2,
   notification3,
   notification4,
   plusSquare,
   roadmap3,
   searchMd,
-  twitter,
 } from "../../public/assets/index";
 
 export const navigation = [
@@ -45,54 +43,77 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 export const notificationImages = [notification4, notification3, notification2];
 
 export const companyLogos = [
-  // "https://cdn.discordapp.com/attachments/1156577116889034857/1231565391457812520/picsprod_logo.png?ex=66376ba6&is=6624f6a6&hm=a8ece1b0cd729a1dbd5d99adb22415369220ff7ba3d95b18f5b5175dac4eae8e&",
-  "https://www.ecoprod.com/images/membres/2371/_thumb1/hipolito-logo.png",
-  // "https://www.arte-studio.fr/wp-content/uploads/2018/04/cropped-ARTE-Studio-logo-noir-2.png",
-  "https://www.arte.tv/sites/corporate/wp-content/themes/arte-entreprise/img/arte_logo.png",
-  "https://www.reworldmedia.com/wp-content/uploads/2020/03/logo_rm_new_fb.png",
+  "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720966861/picsprod_logo_yd6k7g.png",
+  "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720968658/hipolito-logo_vct3xv.png",
+  // "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720968986/arte-studio-logo_ewjb5j.png",
+  "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720966861/arte_logo_sgdpsm.png",
+  "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720968879/reworld-media-logo_le1i4o.png",
 ];
 
-//TODO Choose if I keep pro and personal projects separated, or if I keep only the bests personal projects to add them to the global projects list.
-//If so it could be "Profesional contributions and side projects" and "Student and personal projects". However the list might grow (Arte Boutique, Arte Radio, Pizza Nova, ...) so it might be better to keep them separated.
-//TODO An other idea could be to reduce the size of the cards and to add a "see more" button to see the full list of projects.
+//TODO An idea could be to reduce the size of the cards and to add a "see more" button to see the full list of projects.
 export const projects = [
   {
     id: "0",
-    title: "Educ'ARTE | ARTE Campus",
-    text: "Plateformes éducatives d'ARTE. J'y ai principalement travaillé sur de l'intégration de composants, développement du front-end, et développement de la console d'administration, et légèrement sur le back-end.",
+    title: "ARTE Boutique",
+    text: "Plateforme e-commerce VOD d'ARTE. J'ai travaillé sur le front-end (Next, Tailwind) et le back office (React, Refine, MUI). Je me suis également penché sur l'architecture du back-end (Spring Boot).",
     date: "2024",
     status: "done",
-    ticketsSolved: "33",
+    ticketsSolved: 26,
     imageUrl:
-      "https://media.discordapp.net/attachments/1017345529354666045/1237861601659457586/Logo_Educ_2023_bleu_1.png?ex=663d2ff4&is=663bde74&hm=0979bc71a399a8c30dc4d5d80ef03a67a9e8ac487c1b8eb2cfe8f238068d5ada&=&format=webp&quality=lossless&width=592&height=297",
+      "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720967722/arte-boutique-logo-w-min_vczuid.png",
     colorful: true,
+    width: 160,
   },
   {
     id: "1",
-    title: "ARTE Kino",
-    text: "Festival de cinéma soutenu par ARTE et Chanel. J'ai travaillé sur le front-end et la console d'administration.",
-    date: "May 2023",
+    title: "Educ'ARTE | ARTE Campus",
+    text: "Plateforme éducative d'ARTE. J'y ai principalement travaillé sur de l'intégration de composants, développement du front-end (Next, Storybook, Sass), et développement du back office, ainsi que sur l'accessibilité et l'internationalisation (fr/en/de).",
+    date: "2024",
     status: "done",
-    ticketsSolved: "8",
-    imageUrl: "https://www.artekino.eu/static/arte-logo.png",
+    ticketsSolved: 33,
+    imageUrl:
+      "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720968058/educ_arte_logo-min_mfj6el.png",
+    secondaryImageUrl:
+      "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720974925/educ-arte-arte-campus-min_ifpdbn.png",
+    colorful: false,
+    width: 130,
+    className: "mb-2",
   },
   {
     id: "2",
-    title: "Open source contributions",
-    text: "I've done some open source contributions to the repositories of tailwindcss.com and tanstack.com",
+    title: "ARTE Kino",
+    text: "Festival de cinéma soutenu par ARTE et Chanel. J'y ai contribué sur des tickets de maintenance du front-end et back office.",
     date: "May 2023",
-    status: "none",
-    ticketsSolved: "0",
-    imageUrl: roadmap3,
+    status: "done",
+    ticketsSolved: 8,
+    imageUrl:
+      "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720966861/arte-kino-logo-min_cbwbrk.png",
+    width: 120,
+    className: "mt-4 mb-5",
   },
   {
     id: "3",
-    title: "Audiovisual work",
-    text: "Before my web development career, I worked in the audiovisual field. During those years, I've worked on various projects, such as documentaries for ARTE, events films for PicProd, music video and ads for Hipolito, and much more as a freelancer.",
+    title: "Open source contributions",
+    text: "I like to do some open source contributions on my free time, it trains my ability to quickly being able to collaborate on a new codebase. I've contributed to TailwindCSS, Tanstack and Storybook repositories.",
     date: "May 2023",
     status: "none",
-    ticketsSolved: "0",
-    imageUrl: roadmap3,
+    ticketsSolved: 0,
+    imageUrl:
+      "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720969285/github_logo_bkmpkv.png",
+    width: 80,
+    className: "mb-2",
+  },
+  {
+    id: "4",
+    title: "Audiovisual work",
+    text: "Before my web development career, I worked in the audiovisual field on various projects such as editing documentaries for ARTE, music video and ads for Hipolito, shooting events films for PicsProd, and much more as a freelancer.",
+    date: "2019-2022",
+    status: "none",
+    ticketsSolved: 0,
+    imageUrl:
+      "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720970041/clap_roxqjc.svg",
+    width: 80,
+    className: "mb-2",
   },
 ];
 
@@ -105,7 +126,7 @@ export const collabContent = [
   {
     id: "1",
     title: "Great collaboration and communication",
-    text: "Involved and passionate, I work closely with my clients and team members to ensure project success. I'm also friendly and easy to work with!",
+    text: "Involved and passionate, I work closely with my clients and team members to ensure project success. I'm also friendly and easy to work with.",
   },
   {
     id: "2",
@@ -122,15 +143,15 @@ export const benefits = [
     backgroundUrl: "assets/benefits/card-1.svg",
     iconUrl: [
       "https://www.svgrepo.com/show/349540/typescript.svg",
-      "https://www.svgrepo.com/show/452092/react.svg",
-      "https://media.discordapp.net/attachments/1156577116889034857/1231647780590846033/next-js-svgrepo-com.png?ex=6637b861&is=66254361&hm=64e62b6c3935f7541b8f9792cb9e6bd5d5c7a3a7afec6d61cc04bb53cff641ee&=&format=webp&quality=lossless&width=784&height=784",
+      "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720969915/react_naqfpx.svg",
+      "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720969869/next-js_hzggqd.png",
     ],
     imageUrl: "https://www.svgrepo.com/show/452092/react.svg",
   },
   {
     id: "1",
     title: "Back-end development",
-    text: "I'm offering advanced Java and Spring skills in developing robust server logic, ensuring seamless performance and security for web applications.",
+    text: "I'm offering advanced Java and Spring Boot skills in developing robust server logic, ensuring seamless performance and security for web applications.",
     backgroundUrl: "assets/benefits/card-4.svg",
     iconUrl: [
       "https://www.svgrepo.com/show/452234/java.svg",
@@ -154,7 +175,7 @@ export const benefits = [
   {
     id: "2",
     title: "Collaboration",
-    text: "I'm confident with the tools and workflows needed to work efficiently in a team, as well as bringing attentive listening to deeply understand the needs of my clients.",
+    text: "I'm confident with the tools and workflows needed to work efficiently in a team, as well as bringing attentive listening to deeply understand the needs of my clients and managers.",
     backgroundUrl: "assets/benefits/card-2.svg",
     iconUrl: [
       "https://www.svgrepo.com/show/448226/gitlab.svg",
@@ -205,7 +226,7 @@ export const testimonials = [
     company: "Picsprod",
     relatedJob: "Internship and freelance job as video editor",
     imgUrl:
-      "https://media.licdn.com/dms/image/C4E03AQFTNRAPUxOpKQ/profile-displayphoto-shrink_100_100/0/1659973025477?e=1719446400&v=beta&t=8xUxpNdqPldLp58YC_8cd4br-FpJdJ7Vgvi4t6qX7RI",
+      "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720966861/1659973025477_jw3v7u.jpg",
   },
   {
     id: "2",
@@ -216,7 +237,7 @@ export const testimonials = [
     company: "Hipolito",
     relatedJob: "Intership as a video editor",
     imgUrl:
-      "https://media.licdn.com/dms/image/C4D03AQFqGMduhK9TRw/profile-displayphoto-shrink_100_100/0/1619712289054?e=1719446400&v=beta&t=cX17pw1y6_PvXnS6egu3V7rlY1ehINgy8mDv9QiQ86I",
+      "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720967719/16197122890542_mpp3j5.jpg",
   },
 ];
 
@@ -224,8 +245,9 @@ export const socials = [
   {
     id: "0",
     title: "GitHub",
-    iconUrl: "https://github.com/Hugo-Delattre",
-    url: "#",
+    iconUrl:
+      "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720969285/github_logo_bkmpkv.png",
+    url: "https://github.com/Hugo-Delattre",
   },
   {
     id: "1",
