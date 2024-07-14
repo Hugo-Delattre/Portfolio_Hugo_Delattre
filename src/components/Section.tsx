@@ -20,7 +20,7 @@ export const Section = ({
   return (
     <div
       id={id}
-      className={`relative ${customPaddings || "py-10 lg:py-16 xl:py-20"} 
+      className={`relative ${customPaddings || "px-4 py-10 lg:py-16 xl:py-20"} 
       ${className || ""}`}
     >
       {children}

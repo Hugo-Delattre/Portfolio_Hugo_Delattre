@@ -13,7 +13,7 @@ import {
 import Image from "next/image";
 import { title } from "process";
 
-import { testimonials } from "@/constants";
+import { testimonials } from "@/constants/testimonials";
 export type testimonialProps = {
   id: string;
   review: string;

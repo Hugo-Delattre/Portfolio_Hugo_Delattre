@@ -13,7 +13,7 @@ import {
 import Image from "next/image";
 import { title } from "process";
 
-import { testimonials } from "@/constants";
+import { testimonials } from "@/constants/testimonials";
 import { TestominalCarousel } from "@/components/TestominalCarousel";
 export type testimonialProps = {
   id: string;
@@ -29,7 +29,7 @@ export type ReferencesProps = {};
 
 export const References = (props: ReferencesProps) => {
   return (
-    <Section id="references" className="overflow-hidden">
+    <Section id="references-2" className="overflow-hidden">
       <Heading title="Testimonials" tag=" " className="md:text-center" />
       <TestominalCarousel />
 

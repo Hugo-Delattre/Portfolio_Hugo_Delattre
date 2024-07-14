@@ -97,7 +97,7 @@ const Hero = () => {
                         subtitle="Seems like you're in luck!"
                         imgSrc="https://play-lh.googleusercontent.com/pCYfqB1v-c9Phmvjxji_v37Lf1l59fg1pIy17PztwmS2yoRvGtNAgHZlOHQf0AQo_MZv"
                         imgAlt="malt-logo"
-                        link="https://www.malt.fr/"
+                        link="https://res.cloudinary.com/dxaqv2hww/image/upload/v1720969103/malt_logo_vnbq3d.png"
                       />
                     </ScrollParallax>
                   </div>
