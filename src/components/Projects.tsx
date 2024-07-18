@@ -149,7 +149,6 @@ export const Projects = (props: ProjectsProps) => {
                         <div className="flex flex-row">
                           <Image
                             src={project.imageUrl}
-                            className={project.className}
                             width={project.width}
                             height={100}
                             alt={project.title}

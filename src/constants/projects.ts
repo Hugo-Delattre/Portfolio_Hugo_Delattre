@@ -48,28 +48,28 @@ export const projects = [
     ticketsSolved: 0,
     imageUrl:
       "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720969285/github_logo_bkmpkv.png",
-    width: 80,
+    width: 65,
     className: "mb-2",
   },
-  {
-    id: "4",
-    title: "Audiovisual work",
-    text: "Before my web development career, I worked in the audiovisual field on various projects such as editing documentaries for ARTE, music video and ads for Hipolito, shooting events films for PicsProd, and more as a freelancer.",
-    date: "2019-2022",
-    status: "none",
-    ticketsSolved: 0,
-    imageUrl:
-      "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720970041/clap_roxqjc.svg",
-    width: 80,
-    className: "mb-2",
-  },
+  // {
+  //   id: "4",
+  //   title: "Audiovisual work",
+  //   text: "Before my web development career, I worked in the audiovisual field on various projects such as editing documentaries for ARTE, music video and ads for Hipolito, shooting events films for PicsProd, and more as a freelancer.",
+  //   date: "2019-2022",
+  //   status: "none",
+  //   ticketsSolved: 0,
+  //   imageUrl:
+  //     "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720970041/clap_roxqjc.svg",
+  //   width: 80,
+  //   className: "mb-2",
+  // },
 ];
 
 export const personalProjects = [
   {
     id: "0",
     title: "GuezzGame",
-    text: "Application de mini-jeux multijoueur en ligne : En tant que référent front-end de ce projet, j'ai eu la responsabilité de former les membres de l'équipe aux bonnes pratiques et architectures React, tout en progressant moi-même en Spring Boot auprès du référent back-end.",
+    text: "Application de mini-jeux multijoueur : En tant que référent front-end de ce projet, j'ai eu la responsabilité de former l'équipe aux bonnes pratiques et architectures React, tout en progressant moi-même en Spring Boot auprès du référent back-end.",
     date: "2024",
     status: "done",
     ticketsSolved: 0,
@@ -80,7 +80,7 @@ export const personalProjects = [
   {
     id: "1",
     title: "TechMarket",
-    text: "Plateforme e-commerce. Mise en place dun panier utilisateur, de commandes Stripe, authentification, etc",
+    text: "Plateforme e-commerce réalisée en Next.js. Mise en place d'un panier utilisateur, authentification, API Rest, commandes Stripe, ...",
     date: "2024",
     status: "done",
     ticketsSolved: 0,
@@ -91,7 +91,7 @@ export const personalProjects = [
   {
     id: "2",
     title: "DungeonExplorer",
-    text: "Projet de jeu 2D Java mettant en avant la programmation orientée objet, inspiré des premiers Zelda.",
+    text: "Jeu 2D développé à deux en Java, inspiré des premiers Zelda et mettant l'accent sur la programmation orientée objet.",
     date: "2024",
     status: "done",
     ticketsSolved: 0,
@@ -102,7 +102,7 @@ export const personalProjects = [
   {
     id: "3",
     title: "TravelSquad",
-    text: "Application de voyage social. Au sein de ce projet j'étais référent front-end et product owner au sein d'une équipe de 5 développeurs étudiants.",
+    text: "Application de voyage social. Au sein de ce projet j'étais référent front-end et product owner au sein d'une équipe de 5 développeurs.",
     date: "2024",
     status: "done",
     ticketsSolved: 0,
