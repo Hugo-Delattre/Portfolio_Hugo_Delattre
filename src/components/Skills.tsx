@@ -17,18 +17,18 @@ const Skills = () => {
           subtitle="...that will make your web project a success 🚀"
         />
       </div>
-      <div className="flex flex-wrap gap-10 mb-10 justify-center lg:mx-[5rem] xl:mx-[10rem]">
+      <div className="flex flex-wrap gap-10 lg:mb-10 justify-center items-start lg:mx-[5rem] xl:mx-[10rem] scale-90 lg:scale-100 -mt-6 lg:-mt-2">
         {skills.map((item) => (
           <div
             key={item.id}
             className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
             style={{ backgroundImage: `url(${item.backgroundUrl})` }}
           >
-            <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
+            <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] ">
               <h5 className="h5 mb-5">{item.title}</h5>
               <p className="body-2 mb-6 text-n-3">{item.text}</p>
               {item.iconUrl.length > 1 && (
-                <div className="flex items-center mt-auto backdrop-blur rounded-2xl bg-n-9/40 border-[1.5px] border-n-1/10 p-3 radius">
+                <div className="flex items-center mt-auto backdrop-blur cursor-pointer rounded-2xl bg-n-9/40 hover:bg-n-9/50 border-[1.5px] border-n-1/10 hover:border-n-1/20 transition-all p-3">
                   {item.iconUrl.map((icon) => (
                     <img
                       key={icon}
@@ -52,7 +52,7 @@ const Skills = () => {
               className="absolute inset-0.5 bg-n-8"
               style={{ clipPath: "url(#benefits)" }}
             >
-              <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
+              {/* <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
                 {item.imageUrl && (
                   <img
                     src={item.imageUrl}
@@ -62,7 +62,7 @@ const Skills = () => {
                     className="w-full h-full object-cover"
                   ></img>
                 )}
-              </div>
+              </div> */}
             </div>
             <ClipPath />
           </div>
