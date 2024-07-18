@@ -35,17 +35,17 @@ export const skills = [
     ],
     imageUrl: "https://www.svgrepo.com/show/448221/docker.svg",
   },
-  {
-    id: "4",
-    title: "UI/UX",
-    text: "My years working in the audiovisual field gave me a sensitive eye to design that helps me implement visually appealing and intuitive interfaces.",
-    backgroundUrl: "assets/benefits/card-5.svg",
-    iconUrl: [
-      "https://www.svgrepo.com/show/448222/figma.svg",
-      "https://www.svgrepo.com/show/452149/adobe-photoshop.svg",
-    ],
-    imageUrl: "https://www.svgrepo.com/show/448222/figma.svg",
-  },
+  // {
+  //   id: "4",
+  //   title: "UI/UX",
+  //   text: "My years working in the audiovisual field gave me a sensitive eye to design that helps me implement visually appealing and intuitive interfaces.",
+  //   backgroundUrl: "assets/benefits/card-5.svg",
+  //   iconUrl: [
+  //     "https://www.svgrepo.com/show/448222/figma.svg",
+  //     "https://www.svgrepo.com/show/452149/adobe-photoshop.svg",
+  //   ],
+  //   imageUrl: "https://www.svgrepo.com/show/448222/figma.svg",
+  // },
   // {
   //   id: "3",
   //   title: "Web3",
