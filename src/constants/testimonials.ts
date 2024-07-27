@@ -21,6 +21,16 @@ export const testimonials = [
       "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720966861/1659973025477_jw3v7u.jpg",
   },
   {
+    id: "3",
+    review: "Tout à fait satisfait, Hugo est efficace et autonome.",
+    author: "Clément Dhamelincourt",
+    position: "Service Manager",
+    company: "ARTE France Développement",
+    relatedJob: "3 years apprenticeship",
+    imgUrl:
+      "https://res.cloudinary.com/dxaqv2hww/image/upload/v1722098693/c-d_df6kqa.jpg",
+  },
+  {
     id: "2",
     review:
       "Nous avons été très contents d'Hugo, qui s'est très bien intégré dans notre équipe. Il nous a fourni un travail de qualité.",
