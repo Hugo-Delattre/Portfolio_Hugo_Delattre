@@ -21,9 +21,11 @@ const FloatingNotification = ({
   return (
     <Component
       href={link || undefined}
-      className={`${className || ""} flex items-center p-4 pr-6 bg-n-9/40 ${
+      className={`${
+        className || ""
+      } flex items-center p-4 pr-6 bg-n-9/40 z-[1000] ${
         link ? "hover:bg-n-9/50 transition duration-300 ease-in-out" : ""
-      }  backdrop-blur border-[1.5px] border-n-1/10 rounded-2xl gap-[0.85rem] z-1 ${
+      }  backdrop-blur border-[1.5px] border-n-1/10 rounded-2xl gap-[0.85rem]  ${
         link ? "" : ""
       }`}
     >

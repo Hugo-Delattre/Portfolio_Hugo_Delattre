@@ -23,6 +23,9 @@ export const skills = [
         name: "Next.js",
       },
     ],
+    advancedSeeMore:
+      "HTML/CSS/JavaScript, TypeScript, React, Next.js, ReactQuery, RHF, Zod, Sass, Tailwind, Shadcn, MUI, Storybook",
+    intermediateSeeMore: "Angular (with Signals)",
   },
   {
     id: "1",
@@ -43,6 +46,9 @@ export const skills = [
         name: "MySQL",
       },
     ],
+    advancedSeeMore:
+      "Java, Spring Boot, MySQL, Spring Data, Hibernate, JUnit, Swagger",
+    intermediateSeeMore: "NestJS, Prisma",
     imageUrl: "https://www.svgrepo.com/show/354380/spring-icon.svg",
     light: true,
   },
@@ -61,6 +67,8 @@ export const skills = [
         name: "Docker",
       },
     ],
+    advancedSeeMore: "Git, GitHub, GitLab, Docker, Jira, Slack, Trello",
+    intermediateSeeMore: "Jenkins, Kubernetes",
     imageUrl: "https://www.svgrepo.com/show/448221/docker.svg",
   },
   // {

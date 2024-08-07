@@ -29,7 +29,7 @@ export default function Home() {
       <Footer />
       <ScrollParallax isAbsolutelyPositioned>
         <FloatingNotification
-          className="overflow-hidden hidden lg:fixed right-[2.5rem]  lg:bottom-[2.5rem] w-[18rem] xl:flex z-2 scale-[1]"
+          className="overflow-hidden hidden lg:fixed right-[2.5rem] lg:bottom-[2.5rem] w-[18rem] xl:flex z-[9000000] scale-[1]"
           title="I'm currently available for freelance work."
           subtitle="Seems like you're in luck 😉"
           imgSrc="https://res.cloudinary.com/dxaqv2hww/image/upload/v1720969103/malt_logo_vnbq3d.png"

@@ -15,11 +15,6 @@ export const navigation = [
     url: "#about",
   },
   {
-    id: "3",
-    title: "References",
-    url: "#references",
-  },
-  {
     id: "4",
     title: "Hiring",
     url: "https://www.malt.fr/profile/hugodelattre",

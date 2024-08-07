@@ -22,6 +22,11 @@ import {
 //   DrawerTrigger,
 // } from "@/components/ui/drawer";
 import Button from "@/components/Button";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
 
 const Skills = () => {
   //TODO Clicking on 'See more' opens a dialog with more details of my competencies. For example, for front-end, I could show that I'm proficient/advanced level in React, Next.js, TailwindCSS, ReactQuery, ReactHookForm, Zod, etc, and that I have solid foundations/fundamental skills in Angular.
@@ -69,13 +74,47 @@ const Skills = () => {
                   {/* <Drawer> */}
                   {/* <DrawerTrigger asChild> */}
                   {/* <div className="flex justify-end items-center ml-auto"> */}
-                  <p
+                  {/* <p
                     className={
                       "ml-auto text-xs font-bold text-n-1 tracking-wider"
                     }
-                  >
-                    See more
-                  </p>
+                  > */}
+                  {/* <TooltipProvider> */}
+                  {/* <Tooltip  delayDuration={25}> */}
+                  {/* <TooltipTrigger asChild > */}
+                  <HoverCard openDelay={25} closeDelay={25}>
+                    <HoverCardTrigger asChild>
+                      <p
+                        className={
+                          "ml-auto text-xs font-bold text-n-1 tracking-wider"
+                        }
+                      >
+                        See more
+                      </p>
+                    </HoverCardTrigger>
+                    <HoverCardContent
+                      side="top"
+                      sideOffset={40}
+                      alignOffset={140}
+                      className="-right-[72px] absolute bottom-0 w-[300px] lg:w-[305px]"
+                    >
+                      <div>
+                        <h6 className="h6">Advanced skills</h6>
+                        <p className="body-2 mb-4">{item.advancedSeeMore}</p>
+                        <h6 className="h6">Intermediate skills</h6>
+                        <p className="body-2 mb-4">
+                          {item.intermediateSeeMore}
+                        </p>
+                      </div>
+                    </HoverCardContent>
+                  </HoverCard>
+                  {/* </TooltipTrigger> */}
+                  {/* <TooltipContent alignOffset={5}> */}
+                  {/* {item.seeMore} */}
+                  {/* </TooltipContent> */}
+                  {/* </Tooltip> */}
+                  {/* </TooltipProvider> */}
+
                   <Arrow />
                 </div>
                 // </DrawerTrigger>
