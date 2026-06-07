@@ -4,16 +4,18 @@ import { personalProjects, projects } from "@/constants/projects";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tagline } from "@/components/Tagline";
 import Image from "next/image";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export type ProjectsProps = {};
 
 export const Projects = (props: ProjectsProps) => {
+  const { language, t } = useLanguage();
   return (
     <Section id="work" crosses className="overflow-hidden">
       <div className="container md:pb-10">
         <Heading
-          title="Contributions..."
-          subtitle="...and projects I've worked on 🛠️"
+          title={t("projects_title")}
+          subtitle={t("projects_subtitle")}
         />
 
         <Tabs
@@ -22,10 +24,10 @@ export const Projects = (props: ProjectsProps) => {
         >
           <TabsList className="hidden rounded-xl w-[546px] items-center gap-2 mx-auto md:flex justify-center mb-2">
             <TabsTrigger value="dev-pro" className="rounded-lg ">
-              Profesional & open source contributions
+              {t("projects_tab_pro")}
             </TabsTrigger>
             <TabsTrigger value="dev-personal" className="rounded-lg">
-              Personal & student projects
+              {t("projects_tab_personal")}
             </TabsTrigger>
           </TabsList>
           <TabsContent value="dev-pro">
@@ -67,7 +69,7 @@ export const Projects = (props: ProjectsProps) => {
                                 alt={status}
                               />
                               <div className="tagline">
-                                {project.ticketsSolved} tickets résolus
+                                {project.ticketsSolved} {t("projects_tickets")}
                               </div>
                             </div>
                           )}
@@ -79,20 +81,20 @@ export const Projects = (props: ProjectsProps) => {
                             className={project.className}
                             width={project.width}
                             height={100}
-                            alt={project.title}
+                            alt={t(project.title)}
                           />
                           {/* {project.secondaryImageUrl && (
                             <Image
                               src={project.secondaryImageUrl}
                               width={140}
                               height={100}
-                              alt={project.title}
+                              alt={t(project.title)}
                             />
                           )} */}
                         </div>
                       </div>
-                      {/* <h4 className="mt-6 h4 mb-4">{project.title}</h4> */}
-                      <p className="body-2 text-n-3 mt-4">{project.text}</p>
+                      {/* <h4 className="mt-6 h4 mb-4">{t(project.title)}</h4> */}
+                      <p className="body-2 text-n-3 mt-4">{t(project.text)}</p>
                     </div>
                     {/* </div> */}
                   </div>
@@ -140,7 +142,7 @@ export const Projects = (props: ProjectsProps) => {
                                 alt={status}
                               />
                               <div className="tagline">
-                                {project.ticketsSolved} tickets résolus
+                                {project.ticketsSolved} {t("projects_tickets")}
                               </div>
                             </div>
                           )}
@@ -151,20 +153,20 @@ export const Projects = (props: ProjectsProps) => {
                             src={project.imageUrl}
                             width={project.width}
                             height={100}
-                            alt={project.title}
+                            alt={t(project.title)}
                           />
                           {/* {project.secondaryImageUrl && (
                             <Image
                               src={project.secondaryImageUrl}
                               width={140}
                               height={100}
-                              alt={project.title}
+                              alt={t(project.title)}
                             />
                           )} */}
                         </div>
                       </div>
-                      {/* <h4 className="mt-6 h4 mb-4">{project.title}</h4> */}
-                      <p className="body-2 text-n-3 mt-4">{project.text}</p>
+                      {/* <h4 className="mt-6 h4 mb-4">{t(project.title)}</h4> */}
+                      <p className="body-2 text-n-3 mt-4">{t(project.text)}</p>
                     </div>
                     {/* </div> */}
                   </div>

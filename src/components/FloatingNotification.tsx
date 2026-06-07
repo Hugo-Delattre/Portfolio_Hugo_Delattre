@@ -21,6 +21,8 @@ const FloatingNotification = ({
   return (
     <Component
       href={link || undefined}
+      target={link ? "_blank" : undefined}
+      rel={link ? "noopener noreferrer" : undefined}
       className={`${
         className || ""
       } flex items-center p-4 pr-6 bg-n-9/40 z-[1000] ${

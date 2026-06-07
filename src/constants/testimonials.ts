@@ -1,10 +1,10 @@
 export const testimonials = [
   {
     id: "0",
-    review: "Hugo s'est très vite intégré avec aisance.",
-    reviewSecondPart: "Il est très rigoureux dans son travail.",
+    review: "Hugo integrated very quickly and with ease.",
+    reviewSecondPart: "He is very rigorous in his work.",
     author: "Angèle Le Névé",
-    position: "Directrice de production",
+    position: "Production Director",
     company: "ARTE France",
     relatedJob: "Video editor for 2 years",
     imgUrl: "https://cdn-icons-png.flaticon.com/512/3541/3541871.png",
@@ -12,7 +12,7 @@ export const testimonials = [
   {
     id: "1",
     review:
-      "Hugo est un très bon élément, très agréable. Il a su s'intégrer parfaitement dans l'entreprise et a fait preuve de beaucoup d'autonomie. Merci Hugo pour ton travail !",
+      "Hugo is a great asset and very pleasant to work with. He integrated perfectly into the company and showed a lot of autonomy. Thank you Hugo for your work!",
     author: "Rémi Lombard",
     position: "Manager",
     company: "Picsprod",
@@ -22,7 +22,8 @@ export const testimonials = [
   },
   {
     id: "3",
-    review: "Tout à fait satisfait, Hugo est efficace et autonome.",
+    review: "I worked with Hugo for two years. He is a very meticulous developer, capable of gaining a precise and deep understanding of the problems he needs to solve, and finding clean and efficient solutions.",
+    reviewSecondPart: "He is also a very enthusiastic colleague and working with him is a pleasure.",
     author: "Clément Dhamelincourt",
     position: "Service Manager",
     company: "ARTE France Développement",
@@ -33,9 +34,9 @@ export const testimonials = [
   {
     id: "2",
     review:
-      "Nous avons été très contents d'Hugo, qui s'est très bien intégré dans notre équipe. Il nous a fourni un travail de qualité.",
+      "We were very pleased with Hugo, who integrated very well into our team. He provided us with quality work.",
     author: "Grégoire Louge",
-    position: "Directeur",
+    position: "Director",
     company: "Hipolito",
     relatedJob: "Intership as a video editor",
     imgUrl:

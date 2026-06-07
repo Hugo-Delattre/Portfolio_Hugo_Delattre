@@ -1,15 +1,17 @@
 import { Section } from "@/components/Section";
 import { socials } from "@/constants/socials";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export type FooterProps = {};
 
 export const Footer = (props: FooterProps) => {
+  const { t } = useLanguage();
   return (
     <Section crosses className="!px-0 !py-10">
       <div className="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
         <p className="caption text-n-4 lg:block">
-          Interested in my profile? Feel free to contact me on Malt, LinkedIn,
-          or at <span className="font-bold">hugodelattre.dev@gmail.com</span>
+          {t("footer_contact")}
+          <span className="font-bold">hugodelattre.dev@gmail.com</span>
         </p>
         <ul className="flex gap-5 flex-wrap">
           {socials.map((social) => (

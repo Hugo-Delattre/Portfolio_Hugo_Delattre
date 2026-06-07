@@ -36,7 +36,6 @@ export const collabContent = [
   {
     id: "2",
     title: "100% of successful past experiences!",
-    // text: "The feedback of my clients and managers have always been great. Check it out below!",
   },
 ];
 

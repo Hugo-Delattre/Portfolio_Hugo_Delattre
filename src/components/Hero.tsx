@@ -14,9 +14,11 @@ import { heroIcons } from "@/constants";
 import FloatingNotification from "@/components/FloatingNotification";
 import Link from "next/link";
 import { CompanyLogos } from "@/components/CompanyLogos";
+import { useLanguage } from "@/lib/LanguageContext";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
+  const { t } = useLanguage();
 
   return (
     <Section
@@ -51,7 +53,7 @@ const Hero = () => {
           </h1>
           <p className="body-1 max-w-3xl mx-auto text-2xl">
             <span className="inline-block relative">
-              Fullstack Software Engineer
+              {t("hero_subtitle")}
               <Image
                 src={curve}
                 className="absolute top-full left-0 w-full"

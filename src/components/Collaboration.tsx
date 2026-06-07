@@ -5,18 +5,20 @@ import { collabContent } from "@/constants";
 import Image from "next/image";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
 import { TestominalCarousel } from "@/components/TestominalCarousel";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export type CollaborationProps = {};
 
 export const Collaboration = (props: CollaborationProps) => {
+  const { language, t } = useLanguage();
   return (
     <Section id="about" className="crosses">
       <div className="container lg:flex">
         <div className="max-w-[35rem]">
           <Heading
             className="md:max-w-md lg:max-w-2xl lg:mb-[4.4rem]"
-            title="About me..."
-            subtitle="...and why you might choose me as your next team member 🙂"
+            title={t("about_title")}
+            subtitle={t("about_subtitle")}
           />
           <ul className="max-w-[22rem} mb-10 md:mb-14">
             {collabContent.map((item) => (
@@ -28,10 +30,10 @@ export const Collaboration = (props: CollaborationProps) => {
                     height={24}
                     alt="check"
                   />
-                  <h6 className="body-2 ml-5">{item.title}</h6>
+                  <h6 className="body-2 ml-5">{t(item.title)}</h6>
                 </div>
                 {item.text && (
-                  <p className="body-2 mt-3 text-n-4">{item.text}</p>
+                  <p className="body-2 mt-3 text-n-4">{t(item.text)}</p>
                 )}
               </li>
             ))}

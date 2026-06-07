@@ -11,12 +11,26 @@ import { References } from "@/components/References";
 import FloatingNotification from "@/components/FloatingNotification";
 import { ScrollParallax } from "react-just-parallax";
 import { Footer } from "@/components/Footer";
+import { useLanguage } from "@/lib/LanguageContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const { t } = useLanguage();
   return (
     <>
+      <div className="absolute top-0 left-0 w-full h-screen pointer-events-none z-40">
+        <ScrollParallax isAbsolutelyPositioned strength={0.07}>
+          <FloatingNotification
+            className="overflow-hidden hidden lg:flex lg:absolute right-[2.5rem] lg:bottom-[2.5rem] w-[22rem] z-40 scale-[1] pointer-events-auto"
+            title={t("hero_available")}
+            subtitle={t("hero_available_sub")}
+            imgSrc="https://res.cloudinary.com/dxaqv2hww/image/upload/v1720969103/malt_logo_vnbq3d.png"
+            imgAlt="malt-logo"
+            link="https://www.malt.fr/profile/hugodelattre"
+          />
+        </ScrollParallax>
+      </div>
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Header />
         <Hero />
@@ -27,16 +41,6 @@ export default function Home() {
       <Collaboration />
       {/* <References /> */}
       <Footer />
-      <ScrollParallax isAbsolutelyPositioned>
-        <FloatingNotification
-          className="overflow-hidden hidden lg:fixed right-[2.5rem] lg:bottom-[2.5rem] w-[18rem] xl:flex z-[9000000] scale-[1]"
-          title="I'm currently available for freelance work."
-          subtitle="Seems like you're in luck 😉"
-          imgSrc="https://res.cloudinary.com/dxaqv2hww/image/upload/v1720969103/malt_logo_vnbq3d.png"
-          imgAlt="malt-logo"
-          link="https://www.malt.fr/profile/hugodelattre"
-        />
-      </ScrollParallax>
     </>
   );
 }

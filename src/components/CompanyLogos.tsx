@@ -1,14 +1,16 @@
 import { companyLogos } from "@/constants";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export type CompanyLogosProps = {
   className: string;
 };
 
 export const CompanyLogos = ({ className }: CompanyLogosProps) => {
+  const { t } = useLanguage();
   return (
     <div className={className}>
       <h5 className="tagline mb-6 text-center text-n-1/50">
-        My work and I are trusted by
+        {t("hero_trusted")}
       </h5>
       <ul className="flex">
         {companyLogos.map((logo, index) => {

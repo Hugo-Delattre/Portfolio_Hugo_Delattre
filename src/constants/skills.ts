@@ -1,7 +1,16 @@
-import { title } from "process";
-import { text } from "stream/consumers";
+export interface Skill {
+  id: string;
+  title: string;
+  text: string;
+  backgroundUrl: string;
+  mainTechnologies: Array<{ iconUrl: string; name: string }>;
+  advancedSeeMore: string;
+  intermediateSeeMore: string;
+  imageUrl?: string;
+  light?: boolean;
+}
 
-export const skills = [
+export const skills: Skill[] = [
   {
     id: "0",
     title: "Front-end development",
@@ -30,77 +39,69 @@ export const skills = [
   {
     id: "1",
     title: "Back-end development",
-    text: "I'm offering advanced Java and Spring Boot skills in developing robust server logic, ensuring seamless performance and security for web applications.",
+    text: "Proficient in building robust APIs and scalable backend architectures. I easily transition between Python with Flask, Java with Spring Boot, or Node.js with NestJS",
     backgroundUrl: "assets/benefits/card-4.svg",
     mainTechnologies: [
       {
-        iconUrl: "https://www.svgrepo.com/show/452234/java.svg",
-        name: "Java",
+        iconUrl: "assets/logos/java.svg",
+        name: "Java / Spring Boot",
       },
       {
-        iconUrl: "https://www.svgrepo.com/show/354380/spring-icon.svg",
-        name: "Spring Boot",
+        iconUrl: "https://www.svgrepo.com/show/452091/python.svg",
+        name: "Python",
       },
       {
-        iconUrl: "https://www.svgrepo.com/show/373848/mysql.svg",
-        name: "MySQL",
+        iconUrl: "assets/logos/postgresql.svg",
+        name: "PostgreSQL",
       },
     ],
     advancedSeeMore:
-      "Java, Spring Boot, MySQL, Spring Data, Hibernate, JUnit, Swagger",
-    intermediateSeeMore: "NestJS, Prisma",
-    imageUrl: "https://www.svgrepo.com/show/354380/spring-icon.svg",
+      "Java / Spring Boot, Node.js / NestJS, Python / Flask, PostgreSQL, REST APIs, Swagger",
+    intermediateSeeMore: "",
+    imageUrl: "assets/logos/java.svg",
     light: true,
   },
   {
     id: "2",
+    title: "Cloud engineering",
+    text: "Designing and implementing scalable cloud architectures, optimized for performance, high availability, and cost efficiency.",
+    backgroundUrl: "assets/benefits/card-3.svg",
+    mainTechnologies: [
+      {
+        iconUrl: "assets/logos/aws-white.svg",
+        name: "AWS",
+      },
+      {
+        iconUrl: "https://www.svgrepo.com/show/448221/docker.svg",
+        name: "Docker",
+      },
+      {
+        iconUrl: "assets/logos/terraform.svg",
+        name: "Terraform",
+      },
+    ],
+    advancedSeeMore: "AWS (S3, Lambda, Glue, EC2), Docker, Terraform, ClickHouse, data compression, cost-optimization",
+    intermediateSeeMore: "Kubernetes, GCP, AI Integration (LLM APIs, RAG, ...)",
+    imageUrl: "assets/logos/aws-white.svg",
+    light: true,
+  },
+  {
+    id: "3",
     title: "Collaboration",
     text: "I'm confident with the tools and workflows needed to work efficiently in a team, as well as bringing attentive listening to deeply understand the needs of my clients and managers.",
     backgroundUrl: "assets/benefits/card-2.svg",
     mainTechnologies: [
       {
         iconUrl: "https://www.svgrepo.com/show/448226/gitlab.svg",
-        name: "Git / GitHub / GitLab",
+        name: "GitLab",
       },
       {
-        iconUrl: "https://www.svgrepo.com/show/448221/docker.svg",
-        name: "Docker",
+        iconUrl: "assets/logos/github.svg",
+        name: "GitHub",
       },
     ],
-    advancedSeeMore: "Git, GitHub, GitLab, Docker, Jira, Slack, Trello",
-    intermediateSeeMore: "Jenkins, Kubernetes",
-    imageUrl: "https://www.svgrepo.com/show/448221/docker.svg",
+    advancedSeeMore: "Git, GitHub, GitLab, Jira, Slack, Trello",
+    intermediateSeeMore: "Jenkins",
+    imageUrl: "https://www.svgrepo.com/show/448226/gitlab.svg",
   },
-  // {
-  //   id: "4",
-  //   title: "UI/UX",
-  //   text: "My years working in the audiovisual field gave me a sensitive eye to design that helps me implement visually appealing and intuitive interfaces.",
-  //   backgroundUrl: "assets/benefits/card-5.svg",
-  //   iconUrl: [
-  //     "https://www.svgrepo.com/show/448222/figma.svg",
-  //     "https://www.svgrepo.com/show/452149/adobe-photoshop.svg",
-  //   ],
-  //   imageUrl: "https://www.svgrepo.com/show/448222/figma.svg",
-  // },
-  // {
-  //   id: "3",
-  //   title: "Web3",
-  //   text: "Passionately integrating blockchain technologies to create secure and transparent decentralized web applications (for related projects).",
-  //   backgroundUrl: "assets/benefits/card-3.svg",
-  //   iconUrl: [
-  //     "https://www.svgrepo.com/show/373788/light-solidity.svg",
-  //     "https://seeklogo.com/images/E/ethers-logo-D5B86204D8-seeklogo.com.png",
-  //   ],
-  //   imageUrl: "https://www.svgrepo.com/show/373788/light-solidity.svg",
-  //   light: true,
-  // },
-
-  // {
-  //   id: "5",
-  //   title: "Soft Skills",
-  //   text: "Bringing attentive listening and proactive involvement to deeply understand the needs of my clients / manager / lead tech, in order to deliver the best solutions.",
-  //   backgroundUrl: "assets/benefits/card-6.svg",
-  //   iconUrl: [""],
-  //   imageUrl: "",
-  // },
 ];

@@ -1,19 +1,20 @@
+import React, { useState, useEffect } from "react";
 import FloatingNotification from "@/components/FloatingNotification";
 import { Heading } from "@/components/Heading";
 import { Section } from "@/components/Section";
 import { CirclePlus } from "lucide-react";
-import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 import Image from "next/image";
-import { title } from "process";
 
 import { testimonials } from "@/constants/testimonials";
+import { useLanguage } from "@/lib/LanguageContext";
 export type testimonialProps = {
   id: string;
   review: string;
@@ -32,10 +33,48 @@ export type TestominalCarouselProps = {
 export const TestominalCarousel = ({
   isLarge = true,
 }: TestominalCarouselProps) => {
+  const { t, language } = useLanguage();
+  const [api, setApi] = useState<CarouselApi>();
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if (!api) return;
+
+    const onSelect = () => {
+      setCurrentIndex(api.selectedScrollSnap());
+    };
+
+    api.on("select", onSelect);
+    return () => {
+      api.off("select", onSelect);
+    };
+  }, [api]);
+
+  useEffect(() => {
+    if (!api) return;
+
+    const currentTestimonial = testimonials[currentIndex];
+    if (!currentTestimonial) return;
+
+    // Get total text length (review + optional reviewSecondPart)
+    const translatedReview = t(currentTestimonial.review);
+    const translatedSecondPart = currentTestimonial.reviewSecondPart ? t(currentTestimonial.reviewSecondPart) : "";
+    const totalLength = translatedReview.length + translatedSecondPart.length;
+
+    // Dynamic delay: base 3500ms + 30ms per character
+    const delay = Math.max(3500, 3000 + totalLength * 30);
+
+    const timer = setTimeout(() => {
+      api.scrollNext();
+    }, delay);
+
+    return () => clearTimeout(timer);
+  }, [api, currentIndex, language]);
+
   return (
     <Carousel
       opts={{ loop: true }}
-      plugins={[Autoplay({ delay: isLarge ? 4500 : 5000 })]}
+      setApi={setApi}
       className={`flex ${
         isLarge
           ? "mx-[8rem] xl:mx-[20rem] xl:transform xl:scale-110 justify-center gap-4 align-center"
@@ -60,11 +99,11 @@ export const TestominalCarousel = ({
               }`}
             >
               <p className="italic font-thin text-sm">
-                {testimonial.review}
+                {t(testimonial.review)}
                 {testimonial.reviewSecondPart && (
                   <>
                     <br />
-                    {testimonial.reviewSecondPart}
+                    {t(testimonial.reviewSecondPart)}
                   </>
                 )}
               </p>
@@ -79,7 +118,7 @@ export const TestominalCarousel = ({
                 <div>
                   <p className="text-n-1">{testimonial.author}</p>
                   <p className="text-xs text-n-3">
-                    {testimonial.position} at {testimonial.company}
+                    {t(testimonial.position)} at {testimonial.company}
                   </p>
                 </div>
               </div>

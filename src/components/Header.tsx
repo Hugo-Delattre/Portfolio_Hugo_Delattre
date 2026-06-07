@@ -7,10 +7,20 @@ import MenuSvg from "@/../public/assets/svg/MenuSvg";
 import Button from "@/components/Button";
 import { navigation } from "@/constants/navigation";
 import { HamburgerMenu } from "@/components/design/Header";
+import { useLanguage } from "@/lib/LanguageContext";
 
 const Header = () => {
   const { pathname } = useRouter();
   const [openNavigation, setOpenNavigation] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
+
+  const getNavTitle = (id: string, defaultTitle: string) => {
+    if (id === "0") return t("nav_skills");
+    if (id === "1") return t("nav_work");
+    if (id === "2") return t("nav_about");
+    if (id === "4") return t("nav_hiring");
+    return defaultTitle;
+  };
 
   const toggleNavigation = () => {
     if (openNavigation) {
@@ -54,18 +64,18 @@ const Header = () => {
                 onClick={handleClick}
                 target={item.openInNewTab ? "_blank" : undefined}
               >
-                {item.title}
+                {getNavTitle(item.id, item.title)}
               </Link>
             ))}
           </div>
           <HamburgerMenu />
         </nav>
-        <a
-          href="#signup"
-          className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
+        <button
+          onClick={() => setLanguage(language === "fr" ? "en" : "fr")}
+          className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block uppercase font-bold"
         >
-          FR
-        </a>
+          {language}
+        </button>
         {/* <Button className="hidden lg:flex" href="#login">
           Hey
         </Button> */}
