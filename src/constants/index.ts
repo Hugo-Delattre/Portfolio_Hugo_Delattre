@@ -18,6 +18,7 @@ export const companyLogos = [
   "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720968658/hipolito-logo_vct3xv.png",
   // "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720968986/arte-studio-logo_ewjb5j.png",
   "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720966861/arte_logo_sgdpsm.png",
+  "/assets/logos/airbus.svg",
   "https://res.cloudinary.com/dxaqv2hww/image/upload/v1720968879/reworld-media-logo_le1i4o.png",
 ];
 

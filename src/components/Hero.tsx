@@ -51,7 +51,7 @@ const Hero = () => {
           </h1>
           <p className="body-1 max-w-3xl mx-auto text-2xl">
             <span className="inline-block relative">
-              Passionate Full Stack Developer
+              Fullstack Software Engineer
               <Image
                 src={curve}
                 className="absolute top-full left-0 w-full"
