@@ -14,7 +14,7 @@ export const skills: Skill[] = [
   {
     id: "0",
     title: "Front-end development",
-    text: "Bringing expertise in crafting engaging, accessible and user-friendly interfaces, using TypeScript and its modern frameworks and libraries.",
+    text: "Bringing expertise in crafting engaging, accessible and user-friendly interfaces, using TypeScript, React and its modern ecosystem.",
     backgroundUrl: "assets/benefits/card-1.svg",
     mainTechnologies: [
       {
@@ -39,7 +39,7 @@ export const skills: Skill[] = [
   {
     id: "1",
     title: "Back-end development",
-    text: "Proficient in building robust APIs and scalable backend architectures. I easily transition between Python with Flask, Java with Spring Boot, or Node.js with NestJS",
+    text: "Proficient in building robust APIs and scalable backend architectures. I easily transition between Python with Flask, Java with Spring Boot, and Node.js.",
     backgroundUrl: "assets/benefits/card-4.svg",
     mainTechnologies: [
       {

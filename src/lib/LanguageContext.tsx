@@ -33,16 +33,16 @@ const dictionary: Record<string, Record<Language, any>> = {
   skills_intermediate: { fr: "Compétences intermédiaires", en: "Intermediate skills" },
 
   // Skills Cards
-  "Front-end development": { fr: "Développement Front-end", en: "Front-end development" },
-  "Back-end development": { fr: "Développement Back-end", en: "Back-end development" },
-  "Cloud engineering": { fr: "Cloud & Data", en: "Cloud engineering" },
+  "Front-end development": { fr: "Front-end", en: "Front-end development" },
+  "Back-end development": { fr: "Back-end", en: "Back-end development" },
+  "Cloud engineering": { fr: "Cloud engineering", en: "Cloud engineering" },
   "Collaboration": { fr: "Collaboration", en: "Collaboration" },
   
   "Bringing expertise in crafting engaging, accessible and user-friendly interfaces, using TypeScript, React and its modern ecosystem.": {
     fr: "Expertise dans la création d'interfaces engageantes, accessibles et intuitives, utilisant TypeScript, React et son écosystème moderne.",
     en: "Bringing expertise in crafting engaging, accessible and user-friendly interfaces, using TypeScript, React and its modern ecosystem."
   },
-  "Proficient in building robust APIs and scalable backend architectures. Whether it's Java with Spring Boot, Node.js with NestJS, or Python with Flask, I easily transition between environments to deliver performance and security.": {
+  "Proficient in building robust APIs and scalable backend architectures. I easily transition between Python with Flask, Java with Spring Boot, and Node.js.": {
     fr: "Conception d'API robustes et d'architectures back-end scalables. Je passe facilement de Python avec Flask à Java avec Spring Boot à Node.js.",
     en: "Proficient in building robust APIs and scalable backend architectures. I easily transition between Python with Flask, Java with Spring Boot, and Node.js."
   },
@@ -90,9 +90,13 @@ const dictionary: Record<string, Record<Language, any>> = {
   projects_tickets: { fr: "tickets résolus", en: "tickets resolved" },
 
   // Projects Cards
-  "Design and optimization of the A350 sensor data platform on AWS. Built serverless data pipelines and highly scalable infrastructure, achieving a massive x73 reduction in monthly hosting costs.": {
-    fr: "Conception et optimisation de la plateforme de données capteurs de l'A350 sur AWS. Développement d'architectures serverless et de pipelines de données hautement scalables. Optimisation majeure des coûts d'infrastructure et de la durée de rétention de la donnée (x73).",
-    en: "Design and optimization of the A350 sensor data platform on AWS. Built serverless data pipelines and highly scalable infrastructure, achieving a massive optimization of hosting costs and data retention duration (x73)."
+  "A350 Sensor Data Platform": {
+    fr: "Plateforme de données capteurs de l'A350",
+    en: "A350 Sensor Data Platform"
+  },
+  "Developed new full stack features (React, Flask) handling and processing a massive influx of data with AWS serverless services, allowing to visualize sensor data from the A350 in a user-friendly interface.": {
+    fr: "Développement de nouvelles fonctionnalités full-stack (React, Flask) pour la gestion et le traitement d'un flux massif de données avec des services serverless AWS, permettant de visualiser les données des capteurs de l'A350 via une interface intuitive.",
+    en: "Developed new full stack features (React, Flask) handling and processing a massive influx of data with AWS serverless services, allowing to visualize sensor data from the A350 in a user-friendly interface."
   },
   "ARTE's e-commerce VOD platform. Worked on the front-end (Next, Tailwind), back-office (React, Refine, MUI), and backend architecture (Spring Boot).": {
     fr: "Plateforme e-commerce VOD d'ARTE. J'ai travaillé sur le front-end (Next, Tailwind) et le back office (React, Refine, MUI). Je me suis également penché sur l'architecture du back-end (Spring Boot).",
